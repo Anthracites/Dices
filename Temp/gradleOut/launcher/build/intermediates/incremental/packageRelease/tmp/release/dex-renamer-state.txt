@@ -1,4 +1,0 @@
-#Sun Jul 17 11:16:00 CEST 2022
-base.0=/Users/natalagusarova/Documents/MyDocuments/MyProjects/Games/Dices/Dice/Dices/Temp/gradleOut/launcher/build/intermediates/dex/release/mergeDexRelease/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
