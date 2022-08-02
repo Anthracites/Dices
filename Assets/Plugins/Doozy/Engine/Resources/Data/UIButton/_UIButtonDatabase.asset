@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889794c411054f7ca8e6fbdc6728c846, type: 3}
+  m_Name: _UIButtonDatabase
+  m_EditorClassIdentifier: 
+  DatabaseType: 0
+  CategoryNames:
+  - Custom
+  - Dices
+  - General
+  Categories:
+  - {fileID: 11400000, guid: 4e592c400ac2947f8a8aa54d6b53871f, type: 2}
+  - {fileID: 11400000, guid: 79bee27d647974f909966a4ecb76f562, type: 2}
