@@ -143,102 +143,6 @@ MonoBehaviour:
   - Category: Dices
     InstantAction: 0
     Name: Settings
---- !u!114 &-3664201151410946255
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 840a439e06374673a9115ed02deb5a54, type: 3}
-  m_Name: UINode
-  m_EditorClassIdentifier: 
-  ErrorNodeNameIsEmpty: 0
-  ErrorDuplicateNameFoundInGraph: 0
-  m_inputSockets:
-  - m_connectionMode: 1
-    m_connections:
-    - m_inputConnectionPoint: {x: -2, y: 4}
-      m_outputConnectionPoint: {x: 202, y: 4}
-      m_id: 3be3162d-8d19-4555-92cc-0d265973f8e8
-      m_inputNodeId: ce247b2f-b5d0-4109-8d23-d6173d525ba2
-      m_inputSocketId: 9b7189b5-7014-416a-9dc0-3ed65a54f320
-      m_outputNodeId: bb6f70be-8ee5-43f5-bc1a-792c3720d9c9
-      m_outputSocketId: 77231f45-1ea4-4941-851e-e1d96a21c51f
-    m_connectionPoints:
-    - {x: -2, y: 4}
-    - {x: 202, y: 4}
-    m_direction: 0
-    m_canBeDeleted: 0
-    m_canBeReordered: 0
-    m_curveModifier: 0
-    m_height: 24
-    m_width: 216
-    m_x: 0
-    m_y: 38
-    m_id: 9b7189b5-7014-416a-9dc0-3ed65a54f320
-    m_nodeId: ce247b2f-b5d0-4109-8d23-d6173d525ba2
-    m_socketName: InputSocket_0
-    m_value: '{"ButtonCategory":"General","ButtonName":"Unnamed","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
-    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp-firstpass,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_outputSockets:
-  - m_connectionMode: 0
-    m_connections:
-    - m_inputConnectionPoint: {x: 202, y: 4}
-      m_outputConnectionPoint: {x: -2, y: 4}
-      m_id: ecfe89f5-3300-423f-8cc0-6dd64843e687
-      m_inputNodeId: bb6f70be-8ee5-43f5-bc1a-792c3720d9c9
-      m_inputSocketId: 2090fc2f-c7a4-472a-a2a8-0d95eea4ba46
-      m_outputNodeId: ce247b2f-b5d0-4109-8d23-d6173d525ba2
-      m_outputSocketId: 7d4c5e0a-9415-488c-90ac-43a07b45fae4
-    m_connectionPoints:
-    - {x: -2, y: 4}
-    - {x: 202, y: 4}
-    m_direction: 1
-    m_canBeDeleted: 1
-    m_canBeReordered: 1
-    m_curveModifier: 0
-    m_height: 24
-    m_width: 216
-    m_x: 0
-    m_y: 62
-    m_id: 7d4c5e0a-9415-488c-90ac-43a07b45fae4
-    m_nodeId: ce247b2f-b5d0-4109-8d23-d6173d525ba2
-    m_socketName: OutputSocket_0
-    m_value: '{"ButtonCategory":"Dices","ButtonName":"PlayShortButton","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
-    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp-firstpass,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_nodeType: 4
-  m_allowDuplicateNodeName: 0
-  m_allowEmptyNodeName: 0
-  m_canBeDeleted: 1
-  m_debugMode: 0
-  m_useFixedUpdate: 0
-  m_useLateUpdate: 0
-  m_useUpdate: 0
-  m_height: 128
-  m_width: 216
-  m_x: 792
-  m_y: -12
-  m_minimumInputSocketsCount: 1
-  m_minimumOutputSocketsCount: 1
-  m_graphId: 192bbb8d-1527-47c7-8400-a54123fa8654
-  m_id: ce247b2f-b5d0-4109-8d23-d6173d525ba2
-  m_name: UIView_Play_Demo
-  m_notes: 
-  m_onEnterShowViews:
-  - Category: Dices
-    InstantAction: 0
-    Name: Settings
-  m_onEnterHideViews: []
-  m_onExitShowViews: []
-  m_onExitHideViews:
-  - Category: Dices
-    InstantAction: 0
-    Name: Settings
 --- !u!114 &-1653725568136174141
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -365,7 +269,7 @@ MonoBehaviour:
     m_id: d986f7f8-6b42-485c-a5d6-9d27c4761352
     m_nodeId: cd02039e-0561-42fc-beb2-b01bef93c769
     m_socketName: OutputSocket_0
-    m_value: '{"ButtonCategory":"Dices","ButtonName":"SettingsButton","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_value: '{"ButtonCategory":"Dices","ButtonName":"ContinueAfterDonationButton","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp-firstpass,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
@@ -419,7 +323,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: 192bbb8d-1527-47c7-8400-a54123fa8654
-  m_lastModified: 133015728042322680
+  m_lastModified: 133041173113016870
 --- !u!114 &2322409798596682512
 MonoBehaviour:
   m_ObjectHideFlags: 1
