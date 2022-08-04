@@ -1,0 +1,75 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Dices.Donation.DonationShowStart">
+			<method name="StartShow"/>
+			<method name="StopShow"/>
+		</type>
+		<type fullname="Dices.GamePlay.DiceRotation">
+			<method name="DestroySelf"/>
+			<method name="DestroySelf"/>
+			<method name="StopRotation"/>
+		</type>
+		<type fullname="Dices.GamePlay.DiceSpawnCS">
+			<method name="SpawnDice"/>
+		</type>
+		<type fullname="Dices.UIConnection.SettingsSafeAndUpload">
+			<method name="SaveSettings"/>
+		</type>
+		<type fullname="Dices.UserInterface.BigRerollButton">
+			<method name="OnClick"/>
+		</type>
+		<type fullname="Dices.UserInterface.CameraRottion">
+			<method name="RotateCamera"/>
+		</type>
+		<type fullname="Dices.UserInterface.ScoreCounter">
+			<method name="ScoreCleaner"/>
+			<method name="ScoreCleaner"/>
+			<method name="WriteHistory"/>
+		</type>
+		<type fullname="Dices.UserInterface.UI_Drawer_Container">
+			<method name="Reroll"/>
+			<method name="ScoreShow"/>
+			<method name="ShowScoreHistory"/>
+			<method name="StopRotate"/>
+		</type>
+		<type fullname="Dices.UserInterface.UI_PopUp_Donate">
+			<method name="ChooseDonationAmount"/>
+			<method name="ChooseDonationAmount"/>
+			<method name="ChooseDonationAmount"/>
+			<method name="ClosePopUp"/>
+			<method name="ClosePopUp"/>
+		</type>
+		<type fullname="Dices.UserInterface.UI_View_Inform">
+			<method name="ChangeCanvasOrientation"/>
+			<method name="OpenEmail"/>
+			<method name="ShowDonationPopUp"/>
+		</type>
+		<type fullname="Dices.UserInterface.UI_View_Settings">
+			<method name="ChangeAnimUsing"/>
+			<method name="ChangeCanvasOrientation"/>
+			<method name="ChangeDetailShow"/>
+			<method name="ChangeDicesAmountByField"/>
+			<method name="ChangeHistoryShow"/>
+			<method name="ChangeSlider"/>
+			<method name="ChangeStopMode"/>
+			<method name="ChangeTimerField"/>
+			<method name="ChangeTimerSlider"/>
+			<method name="LessDiceAmount"/>
+			<method name="LessTimeAmount"/>
+			<method name="MoreDiceAmount"/>
+			<method name="MoreTimeAmount"/>
+			<method name="StartGame"/>
+			<method name="SwichSound"/>
+		</type>
+		<type fullname="Dices.UserInterface.UIView_SuccessfulDonation">
+			<method name="ContinueAfterDonationShow"/>
+		</type>
+		<type fullname="PurchaseManager">
+			<method name="BuyConsumable"/>
+		</type>
+		<type fullname="UnityPackages.UI.UIFlexbox">
+			<method name="Draw"/>
+			<method name="Draw"/>
+		</type>
+	</assembly>
+</linker>

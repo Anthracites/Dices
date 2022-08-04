@@ -1,0 +1,123 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="UnityPackages.UI.FlexItem" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Assembly-CSharp-firstpass">
+		<type fullname="Doozy.Engine.Events.BoolEvent" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Events.StringEvent" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Nody.Models.Connection" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Nody.Models.Socket" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Progress.ProgressEvent" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.RangedFloat" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Soundy.AudioData" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Soundy.SoundyData" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Themes.ColorId" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Themes.LabelId" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Themes.ThemeVariantData" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.Touchy.TouchInfoEvent" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.Fade" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.Move" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.Rotate" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.Scale" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.UIAnimation" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Animation.UIAnimationsDatabase" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Base.UIAction" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Base.UIContainer" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Base.UIEffect" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Input.InputData" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.Internal.UIViewCategoryName" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIButtonBehavior" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIButtonLoopAnimation" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIDrawerArrow" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIDrawerArrow/Holder" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIDrawerBehavior" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIDrawerContainer" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIPopupBehavior" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIPopupContentReferences" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIToggleBehavior" preserve="nothing" serialized="true"/>
+		<type fullname="Doozy.Engine.UI.UIViewBehavior" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="DOTween">
+		<type fullname="DG.Tweening.Core.DOTweenSettings/ModulesSetup" preserve="nothing" serialized="true"/>
+		<type fullname="DG.Tweening.Core.DOTweenSettings/SafeModeOptions" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.KerningTable" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_GlyphAdjustmentRecord" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_GlyphPairAdjustmentRecord" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_GlyphValueRecord" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Sprite" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_SpriteCharacter" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_SpriteGlyph" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Style" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule">
+		<type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.TextCoreFontEngineModule">
+		<type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="UnityEngine.UI">
+		<type fullname="UnityEngine.EventSystems.EventTrigger/Entry" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.EventSystems.EventTrigger/TriggerEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.FontData" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.InputField/EndEditEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.InputField/OnChangeEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.InputField/SubmitEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Zenject">
+		<type fullname="Zenject.Asteroids.Asteroid/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.AsteroidManager/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.AudioHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.GameInstaller/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.GameSettingsInstaller/AsteroidSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.GameSettingsInstaller/ShipSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.ShipStateDead/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.ShipStateMoving/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.Asteroids.ShipStateWaitingToStart/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyCommonSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyDeathHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyRotationHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemySpawner/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyStateAttack/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyStateFollow/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyStateIdle/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.EnemyTunables" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.GameInstaller/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.GameRestartHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.GameSettingsInstaller/EnemySettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.GameSettingsInstaller/PlayerSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.PlayerDamageHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.PlayerHealthWatcher/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.PlayerMoveHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.SpaceFighter.PlayerShootHandler/Settings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.ZenjectSettings" preserve="nothing" serialized="true"/>
+		<type fullname="Zenject.ZenjectSettings/SignalSettings" preserve="nothing" serialized="true"/>
+	</assembly>
+</linker>
