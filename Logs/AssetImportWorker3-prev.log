@@ -1,0 +1,274 @@
+Unity Editor version:    2022.1.9f1 (07e076b6d414)
+Branch:                  2022.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.5 (Build 21G72)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+/Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60403
+Successfully changed project path to: /Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+/Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 197.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.9f1 (07e076b6d414)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
+Metal devices available: 2
+0: AMD Radeon Pro 5500M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.007182 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 197.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.081 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2082ms)
+		BeginReloadAssembly (228ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1601ms)
+			LoadAssemblies (235ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (429ms)
+				TypeCache.Initialize (428ms)
+					TypeCache.ScanAssembly (426ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (918ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (300ms)
+				SetLoadedEditorAssemblies (29ms)
+				RefreshPlugins (197ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004030 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  3.305 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3318ms)
+		BeginReloadAssembly (404ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (162ms)
+		EndReloadAssembly (2651ms)
+			LoadAssemblies (314ms)
+			RebuildTransferFunctionScriptingTraits (6ms)
+			SetupTypeCache (724ms)
+				TypeCache.Initialize (701ms)
+					TypeCache.ScanAssembly (683ms)
+				ResolveRequiredComponents (23ms)
+			ReleaseScriptCaches (9ms)
+			RebuildScriptCaches (218ms)
+			SetupLoadedEditorAssemblies (1252ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (96ms)
+				SetLoadedEditorAssemblies (15ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (625ms)
+				ProcessInitializeOnLoadMethodAttributes (396ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3407 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (47.2 KB). Loaded Objects now: 3906.
+Memory consumption went from 0.72 GB to 0.72 GB.
+Total: 19.158868 ms (FindLiveObjects: 0.502593 ms CreateObjectMapping: 0.496204 ms MarkObjects: 17.770798 ms  DeleteObjects: 0.387851 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 59181.201500 seconds.
+  path: Assets/Sprites/information, info, help.png
+  artifactKey: Guid(e044f180294ad7547b46877f546a0bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/information, info, help.png using Guid(e044f180294ad7547b46877f546a0bfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05e030a65c42134745bd0fde062de6d') in 1.010096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Plugins/Doozy/Logos/Soundy/Logo - Soundy - LogoCompactOrange.png
+  artifactKey: Guid(5e10b43d2b58f0241b9231fcbe25fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/Soundy/Logo - Soundy - LogoCompactOrange.png using Guid(5e10b43d2b58f0241b9231fcbe25fd03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f57179ed179e5e5be502857505be6bf') in 0.225929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Plugins/Doozy/Logos/Touchy/Logo - Touchy - WordmarkWhite.png
+  artifactKey: Guid(1774d696041acda41bc9fc73cc21e148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/Touchy/Logo - Touchy - WordmarkWhite.png using Guid(1774d696041acda41bc9fc73cc21e148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45fc8727998ddf36552dec4900ce634') in 0.173336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003292 seconds.
+  path: Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - WordmarkLight.png
+  artifactKey: Guid(2f0fe047e47d947418dd89b0a9d342d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - WordmarkLight.png using Guid(2f0fe047e47d947418dd89b0a9d342d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaea2efd410e29ff4cc50be241daae3b') in 0.111468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Plugins/Doozy/Logos/Touchy/Logo - Touchy - WordmarkGreen.png
+  artifactKey: Guid(03eff29d3f3b5c94b9dc49473bdfc1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/Touchy/Logo - Touchy - WordmarkGreen.png using Guid(03eff29d3f3b5c94b9dc49473bdfc1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4110cb84b3b8b9347260b834ded8f1') in 0.084244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Plugins/Doozy/Logos/Doozy Entertainment/Logo - Doozy Entertainment.png
+  artifactKey: Guid(0c220fe1cabb7df4c9edcb277e5dbb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/Doozy Entertainment/Logo - Doozy Entertainment.png using Guid(0c220fe1cabb7df4c9edcb277e5dbb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd7e9e74aff4303a4d72a316f5c5f1e') in 0.094048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Sprites/InputFieldBG.png
+  artifactKey: Guid(4c01975c5f3aa4b4f832139a6c3d66d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/InputFieldBG.png using Guid(4c01975c5f3aa4b4f832139a6c3d66d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e941b15b1579885961a90913e92930') in 0.102080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - LogoCompactLight.png
+  artifactKey: Guid(88e849b755172e741ae382b8db9fc4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - LogoCompactLight.png using Guid(88e849b755172e741ae382b8db9fc4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2989ceb7e7f508dc2b251b42c17ad0') in 0.095720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Sprites/DiceSides/1.png
+  artifactKey: Guid(37e8aa7a4dd14244ba5d7b0aea811931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DiceSides/1.png using Guid(37e8aa7a4dd14244ba5d7b0aea811931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf1085c024372c7efc7025a203578f0') in 0.147174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Sprites/DiceSides/2.png
+  artifactKey: Guid(9fff1e3554f75394aaf64dd4ddf82db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DiceSides/2.png using Guid(9fff1e3554f75394aaf64dd4ddf82db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f9f1f2ae17ef36d4ad8c81743f225b') in 0.088950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - IconDark.png
+  artifactKey: Guid(c6e83b049b379e945ab96dc10ba723ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - IconDark.png using Guid(c6e83b049b379e945ab96dc10ba723ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29b4becfd93251fa53063d2475652679') in 0.066116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - LogoWideDark.png
+  artifactKey: Guid(ab0a9ea0fe53dd84f84eedb143fddbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Logos/DoozyUI/Logo - DoozyUI - LogoWideDark.png using Guid(ab0a9ea0fe53dd84f84eedb143fddbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96eae88a7749c944005aee9b5d3de808') in 0.080436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Sprites/FloorTexture.jpg
+  artifactKey: Guid(c20c605f9d298054ea87a274e9ec65fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/FloorTexture.jpg using Guid(c20c605f9d298054ea87a274e9ec65fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359d0576fa5d651cde161c39f2df3132') in 2.249137 seconds 
