@@ -1,1 +1,0 @@
-Temp/ScriptUpdater/80924573/638137507_OrientationDetector.cs => Assets/Plugins/Doozy/Engine/Orientation/OrientationDetector.cs
