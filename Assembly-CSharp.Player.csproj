@@ -72,7 +72,6 @@
     <Compile Include="Assets/packages/ui-flexbox/UIFlexbox.cs" />
     <Compile Include="Assets/Scripts/DiceSpawnCS.cs" />
     <Compile Include="Assets/Scripts/UI_Drawer_Container.cs" />
-    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
     <Compile Include="Assets/Scripts/ScoreCounter.cs" />
     <Compile Include="Assets/Scripts/PurchaseManager.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Play.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets/Scripts/DiceRotation.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Loading.cs" />
     <Compile Include="Assets/Scripts/DonationShow/DonationShowStart.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Prefabs/ErbGameArt Patreon/Standard/Shaders/FresnelM_Op.shader" />
