@@ -1,0 +1,1522 @@
+Unity Editor version:    2022.1.9f1 (07e076b6d414)
+Branch:                  2022.1/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.5 (Build 21G72)
+Darwin version:          21.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+/Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+52614
+Successfully changed project path to: /Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+/Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 122.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.9f1 (07e076b6d414)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/natalagusarova/Documents/MyDocuments/MyProjects/InProduction/Dices/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
+Metal devices available: 2
+0: AMD Radeon Pro 5500M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5500M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5500M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56411
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.1.9f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.003736 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 155.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.452 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1453ms)
+		BeginReloadAssembly (179ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1073ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+				TypeCache.Initialize (215ms)
+					TypeCache.ScanAssembly (212ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (690ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (251ms)
+				SetLoadedEditorAssemblies (15ms)
+				RefreshPlugins (156ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012437 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  2.275 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2276ms)
+		BeginReloadAssembly (327ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (152ms)
+		EndReloadAssembly (1776ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (476ms)
+				TypeCache.Initialize (463ms)
+					TypeCache.ScanAssembly (455ms)
+				ResolveRequiredComponents (13ms)
+			ReleaseScriptCaches (9ms)
+			RebuildScriptCaches (129ms)
+			SetupLoadedEditorAssemblies (925ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (181ms)
+				SetLoadedEditorAssemblies (9ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (381ms)
+				ProcessInitializeOnLoadMethodAttributes (256ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2022.1.9f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3407 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (47.6 KB). Loaded Objects now: 3906.
+Memory consumption went from 0.72 GB to 0.72 GB.
+Total: 11.131702 ms (FindLiveObjects: 0.513023 ms CreateObjectMapping: 0.688722 ms MarkObjects: 9.729626 ms  DeleteObjects: 0.198946 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13495.797384 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowUp.png
+  artifactKey: Guid(8f3c354f858c41c46b8bace6a7ca9dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowUp.png using Guid(8f3c354f858c41c46b8bace6a7ca9dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccf5c2cb29d7f5ce8c122b126ce1a41') in 0.289840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowAltToBottom.png
+  artifactKey: Guid(2b4ca90775e9a934d8015ee44a0a02ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowAltToBottom.png using Guid(2b4ca90775e9a934d8015ee44a0a02ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdddf9f1367a1f287e85cdb7c776566') in 0.017350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderTouchDetectorDark.png
+  artifactKey: Guid(19138afec3c601f4e9928ee6c75f2bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderTouchDetectorDark.png using Guid(19138afec3c601f4e9928ee6c75f2bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f707c49da734c166b2a0bd1a52800bca') in 0.011204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ClassIconSoundyDatabase.png
+  artifactKey: Guid(34422967727cc6f4681cf3260d4634e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ClassIconSoundyDatabase.png using Guid(34422967727cc6f4681cf3260d4634e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a605e6887412d38485db415ce76839') in 0.012240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderGraphDark.png
+  artifactKey: Guid(64cb8a9336eea494cbe3dec6f2ced42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderGraphDark.png using Guid(64cb8a9336eea494cbe3dec6f2ced42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd692259f59d2c46d1dd45df395b994be') in 0.023752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeOutlineDark.png
+  artifactKey: Guid(fe30a0555861a7a46b1638d2e729e3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeOutlineDark.png using Guid(fe30a0555861a7a46b1638d2e729e3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e033ae59a32db548168d5a91429d1a43') in 0.009371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonDisabledHoverDark.png
+  artifactKey: Guid(35f761d281f633642ba16302ee888262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonDisabledHoverDark.png using Guid(35f761d281f633642ba16302ee888262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6016702fa9f2547b60657425b37d94') in 0.013882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphHoverLight.png
+  artifactKey: Guid(ca68d21ca31401e469a5fb28c16d7889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphHoverLight.png using Guid(ca68d21ca31401e469a5fb28c16d7889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4407dae0719b6f9cacc142b101fe03') in 0.011615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ClassIconProgressTargetTextMeshPro.png
+  artifactKey: Guid(6b4827a6dfc7f844b9a9481b7e488bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ClassIconProgressTargetTextMeshPro.png using Guid(6b4827a6dfc7f844b9a9481b7e488bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a77660d44c67c8b0b421c9408b5da3e') in 0.015834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaCog.png
+  artifactKey: Guid(714ecfbd44c6bdc4587b40bb4a3c75a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaCog.png using Guid(714ecfbd44c6bdc4587b40bb4a3c75a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ae8721a96c4747a21cdca34e62cf9e') in 0.010500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaEnvelope.png
+  artifactKey: Guid(6889f768b0e0da3409cc5b43ffaae415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaEnvelope.png using Guid(6889f768b0e0da3409cc5b43ffaae415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e1c8aa8d060e07ea594ecf22006ff1') in 0.014855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIDrawerNodeLight.png
+  artifactKey: Guid(bf12e144284779747857daf13b37bc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIDrawerNodeLight.png using Guid(bf12e144284779747857daf13b37bc72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba70207cc713c2a23d5966545b6e5a9c') in 0.009826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeOutlineLight.png
+  artifactKey: Guid(5f8db4257dce18a4f85c3692796761cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeOutlineLight.png using Guid(5f8db4257dce18a4f85c3692796761cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c8162739e9665ce25c629a05fd36e9') in 0.012203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconRoundedCornerBottomRight.png
+  artifactKey: Guid(c19c819416a599048bbe78348b385729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconRoundedCornerBottomRight.png using Guid(c19c819416a599048bbe78348b385729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fbde4a10759eccaa6560c10d8ed6b9') in 0.010249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconSceneLoader.png
+  artifactKey: Guid(fcefed77211ef8d4b946a0ee926b2e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconSceneLoader.png using Guid(fcefed77211ef8d4b946a0ee926b2e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b36c6cd032a5f7fbd08335e71085f4b') in 0.010349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconShowAnimation.png
+  artifactKey: Guid(03840fe6dceca8d4d98e8da7927a6e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconShowAnimation.png using Guid(03840fe6dceca8d4d98e8da7927a6e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcb3d52bf2bcc504be27d4a6b688a044') in 0.009565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconScale.png
+  artifactKey: Guid(d18ea389d96219d49bc8bdbb909c666a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconScale.png using Guid(d18ea389d96219d49bc8bdbb909c666a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3834f84d9b9319c0e3f733e6e94d9dc') in 0.011673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUITrigger.png
+  artifactKey: Guid(4802ffc2dbba60042acef4e4fd3940a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUITrigger.png using Guid(4802ffc2dbba60042acef4e4fd3940a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ff43a9727cb47e634a9aca5de6d833') in 0.011094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUpdate.png
+  artifactKey: Guid(fa007f8e977cd3f4c9deeeb298dab51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUpdate.png using Guid(fa007f8e977cd3f4c9deeeb298dab51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f396f07b7b4e13ec36814abb040a3c4b') in 0.008712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/InfoMessageMessage.png
+  artifactKey: Guid(a1cf98b7910d19b408c5024f144ff9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/InfoMessageMessage.png using Guid(a1cf98b7910d19b408c5024f144ff9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2979e7a609ba11cfb680e2e1c597847e') in 0.010446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUIEffect.png
+  artifactKey: Guid(43af31240c5abba4a8cf628466ea6ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUIEffect.png using Guid(43af31240c5abba4a8cf628466ea6ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5976c2af3e704ffe4ff98a93df7c7d11') in 0.009577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUIButtonListener.png
+  artifactKey: Guid(43bfd246096969641b1616163d280c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUIButtonListener.png using Guid(43bfd246096969641b1616163d280c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2592aa79d79ea4be98b482f3dba6c3ce') in 0.008088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeIconBackButtonNode.png
+  artifactKey: Guid(0d023627fcdf4e64086fc853d525ca33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeIconBackButtonNode.png using Guid(0d023627fcdf4e64086fc853d525ca33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22890ffc4aee5f53a4fd42309792f12e') in 0.013104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeIconStartNode.png
+  artifactKey: Guid(8f039483a31395042b29512a57a5cba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeIconStartNode.png using Guid(8f039483a31395042b29512a57a5cba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd003db53c9e26ff001576c0bdd7a23') in 0.017082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeGlowLight.png
+  artifactKey: Guid(24840320af1754e459211d6be3329b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeGlowLight.png using Guid(24840320af1754e459211d6be3329b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7b5bbd715a92f6749c296b443a11c5') in 0.009312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconTouchy.png
+  artifactKey: Guid(939f0a0946c8ba84391f530d3623d435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconTouchy.png using Guid(939f0a0946c8ba84391f530d3623d435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5833b8bfdc39b11ae4218895ff91413f') in 0.014308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUINode.png
+  artifactKey: Guid(674a3299bc1df0644af0c93ac8cfbfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUINode.png using Guid(674a3299bc1df0644af0c93ac8cfbfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156fdd3ca035148f5f1e249a5d4e686d') in 0.015743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaTag.png
+  artifactKey: Guid(bd6c68c94603bd7429b23f9932267b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaTag.png using Guid(bd6c68c94603bd7429b23f9932267b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94ea18e307771c310e905142adee8656') in 0.013652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaTwitter.png
+  artifactKey: Guid(db31689d30089094983ed82ac39d942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaTwitter.png using Guid(db31689d30089094983ed82ac39d942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d07c495243c510513e2855b2f78d704') in 0.013103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFeather.png
+  artifactKey: Guid(3ba13692c281a5340bc66f05ada31e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFeather.png using Guid(3ba13692c281a5340bc66f05ada31e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ffee27c54777abce740af32f9a265d') in 0.011254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconKeyMapper.png
+  artifactKey: Guid(eaa124570ec58ca41b5aee4455ebff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconKeyMapper.png using Guid(eaa124570ec58ca41b5aee4455ebff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1997fdabe6b7511c8debacd3d17966f') in 0.011826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconOnButtonDeselect.png
+  artifactKey: Guid(a3490ec3880f9944bbd9335225dffc08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconOnButtonDeselect.png using Guid(a3490ec3880f9944bbd9335225dffc08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191b30370d4ab2590b60f8a26fdfd7cd') in 0.011372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconOnPointerDown.png
+  artifactKey: Guid(74a0dd60933b83d46b3ddef885eda279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconOnPointerDown.png using Guid(74a0dd60933b83d46b3ddef885eda279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb12231fbb6a1e65a7dc40688c86faaa') in 0.016253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconProgressTargetText.png
+  artifactKey: Guid(db8f3405b8fab4442965494273731ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconProgressTargetText.png using Guid(db8f3405b8fab4442965494273731ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee4e3a5d2ec0295730f9000caa8fceb') in 0.012521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconGameEventManager.png
+  artifactKey: Guid(8e91ac752e9ab534397f202bc0827d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconGameEventManager.png using Guid(8e91ac752e9ab534397f202bc0827d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '181b7d107d14892ba5dd74a3ce1e8ced') in 0.010054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewSubGraphSelectedLight.png
+  artifactKey: Guid(e3630dc2c26db9e49b9e560ba0954996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewSubGraphSelectedLight.png using Guid(e3630dc2c26db9e49b9e560ba0954996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6050538247f239e7bb17de8463b903') in 0.009045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderColorTargetSelectableDark.png
+  artifactKey: Guid(c0e32aec2f74ef24cb0c7a6b18b39c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderColorTargetSelectableDark.png using Guid(c0e32aec2f74ef24cb0c7a6b18b39c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477ce358af1ecf34ff6ee81497ef5f62') in 0.011516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaListUl.png
+  artifactKey: Guid(9bcfec330bf23084189f7099531dcf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaListUl.png using Guid(9bcfec330bf23084189f7099531dcf14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667ca27cdee5804f472eed55ea2bb5fd') in 0.010900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaMousePointer.png
+  artifactKey: Guid(36f66d20c53d3bf4e8d06651e9da673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaMousePointer.png using Guid(36f66d20c53d3bf4e8d06651e9da673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5282472084ad3d7773f5e8feb8c0e998') in 0.010179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaPencil.png
+  artifactKey: Guid(81a9f9bbe8170314eaae682d2667cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaPencil.png using Guid(81a9f9bbe8170314eaae682d2667cc9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89207435a8bb4e7b847efd694fa02baa') in 0.011269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonDrawersActiveDark.png
+  artifactKey: Guid(61aa5b3fccf695446aace698e65a7678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonDrawersActiveDark.png using Guid(61aa5b3fccf695446aace698e65a7678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21fd2a65eb6465e63df1d6875f40eca7') in 0.008974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaRepeatAlt.png
+  artifactKey: Guid(fbdef1fddf6a3c24cacf0850ac722637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaRepeatAlt.png using Guid(fbdef1fddf6a3c24cacf0850ac722637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95084784ae115cb760c442156440aef') in 0.015008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ClassIconUICanvasNode.png
+  artifactKey: Guid(45e32cafedbd5504aa0acac50ad709d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ClassIconUICanvasNode.png using Guid(45e32cafedbd5504aa0acac50ad709d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d8eb409b7df1589596ee7aaaf9ef55') in 0.010559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaSquare.png
+  artifactKey: Guid(7ea865cd25f074947939541b106f720d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaSquare.png using Guid(7ea865cd25f074947939541b106f720d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d50c186d57c3acf2823e5e8426d1e9') in 0.023224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledHoverLight.png
+  artifactKey: Guid(f7c7ed66009c46d438a0a250cda9946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledHoverLight.png using Guid(f7c7ed66009c46d438a0a250cda9946a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae555dee65bb934193b2828af14b594d') in 0.009969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUIManager.png
+  artifactKey: Guid(dcc451f38fc0ea54fb768de64c71664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUIManager.png using Guid(dcc451f38fc0ea54fb768de64c71664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e168a39aa40e2ead0e37d4f0fa191d') in 0.010787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaStore.png
+  artifactKey: Guid(85998ef5ad536d74b9586e366c257a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaStore.png using Guid(85998ef5ad536d74b9586e366c257a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf85b363bafa6fe9d65f788beb60319') in 0.013310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconWait.png
+  artifactKey: Guid(a9b50fee72e5abe43902ddf5064c845f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconWait.png using Guid(a9b50fee72e5abe43902ddf5064c845f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3687dceef429ed30148d49aa738d4aef') in 0.013034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Prefabs/ErbGameArt Patreon/Standard/Textures/Smoke3.png
+  artifactKey: Guid(52b767eecc2845a429e0e9e2155a8ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ErbGameArt Patreon/Standard/Textures/Smoke3.png using Guid(52b767eecc2845a429e0e9e2155a8ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e640c83f171fd40f1d64f7b832bb0cbc') in 0.018853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ArrowButtonToLeftNormalDark.png
+  artifactKey: Guid(feee3be8b9954864da0d6ef49e8f963b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ArrowButtonToLeftNormalDark.png using Guid(feee3be8b9954864da0d6ef49e8f963b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13dfe9a4f58c31f89b331b75a6c0f22e') in 0.012080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaAtlassian.png
+  artifactKey: Guid(d168c2a8f7f3ffb44add09ada035711e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaAtlassian.png using Guid(d168c2a8f7f3ffb44add09ada035711e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b08c0c426adccc6062054e5595e13b0') in 0.013134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconButtonSettingsNormal.png
+  artifactKey: Guid(ea5266219660f1f4da441175a4bdc633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconButtonSettingsNormal.png using Guid(ea5266219660f1f4da441175a4bdc633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38793a961185bc6b3cfeb6aca7ea8e82') in 0.011767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconDebug.png
+  artifactKey: Guid(f7a429f8c1bb9e444a5445c0d0814d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconDebug.png using Guid(f7a429f8c1bb9e444a5445c0d0814d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8170231d32a4c0ab0af56ff1d1c731a5') in 0.011994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaAdobe.png
+  artifactKey: Guid(6233566f0dd20f2429401b022abde053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaAdobe.png using Guid(6233566f0dd20f2429401b022abde053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b84dcbd76732c59aa99998016e3ee53') in 0.012827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeIconUICanvasNode.png
+  artifactKey: Guid(0719e5f21269daf4cac2a67fe725a076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeIconUICanvasNode.png using Guid(0719e5f21269daf4cac2a67fe725a076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514e681f63ec388d2227555561874f89') in 0.014987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledNormalLight.png
+  artifactKey: Guid(26ad01e8158311149b8489dbe47de1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledNormalLight.png using Guid(26ad01e8158311149b8489dbe47de1cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace757a142c1a1ae0f3772b9f22a7bde') in 0.022815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeBodyDark.png
+  artifactKey: Guid(be23fdd9fd18a6649a063b23412df3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeBodyDark.png using Guid(be23fdd9fd18a6649a063b23412df3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8483cfd01124a5ca1ba37067cd18fb') in 0.017350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaTerminal.png
+  artifactKey: Guid(fdb3852a8469a9d4992225ff956b79ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaTerminal.png using Guid(fdb3852a8469a9d4992225ff956b79ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defd0c16edaea56474f4c442d962630b') in 0.018062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaCaretDown.png
+  artifactKey: Guid(7ae955e4f1e47a84193268dd930889cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaCaretDown.png using Guid(7ae955e4f1e47a84193268dd930889cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c1c57cf516d114fb31fdf234b61de6') in 0.015931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/IconGraphController.png
+  artifactKey: Guid(ef8356145aaa2a747bcd5c9e6d30014e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/IconGraphController.png using Guid(ef8356145aaa2a747bcd5c9e6d30014e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088dd766a51528775ac48e7b527b5024') in 0.016631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphSelectedLight.png
+  artifactKey: Guid(3e7facddd2692154b8bc6dc1df1654c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphSelectedLight.png using Guid(3e7facddd2692154b8bc6dc1df1654c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9e0fbeb337073b738b0d7adb5a2642') in 0.015024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphNormalDark.png
+  artifactKey: Guid(30a7f3eb9c9e10644ad0e19aff90673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonNewGraphNormalDark.png using Guid(30a7f3eb9c9e10644ad0e19aff90673f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d0bd7f411ee71a4c5a2309adc64e14') in 0.012176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/SmokeB.psd
+  artifactKey: Guid(67f9b9363b45b4d3fb7b466648fe8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Textures/SmokeB.psd using Guid(67f9b9363b45b4d3fb7b466648fe8fd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9dbadb85a9cd7e699960634a94a483') in 0.178286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonSaveAsSelectedDark.png
+  artifactKey: Guid(b0b77f807bcafda419ad961251ff39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonSaveAsSelectedDark.png using Guid(b0b77f807bcafda419ad961251ff39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b46f2c32ba8943c21623f12cdf33cd0') in 0.011760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowsAltV.png
+  artifactKey: Guid(c1e6493d2f3a3594ca25024619c12d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowsAltV.png using Guid(c1e6493d2f3a3594ca25024619c12d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168a452f046b815abc71dfe48f08ccaf') in 0.013867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconTime.png
+  artifactKey: Guid(7a6b2c2f370b1af45adc517ccfd5b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconTime.png using Guid(7a6b2c2f370b1af45adc517ccfd5b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb975ab9d0c7ed232bfde369ff9b936b') in 0.012326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaAngleDoubleUp.png
+  artifactKey: Guid(8dedb0712b27c844a964832fcee5d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaAngleDoubleUp.png using Guid(8dedb0712b27c844a964832fcee5d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3685301c5b67ad819c69fae26109040') in 0.013148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconDoozy.png
+  artifactKey: Guid(a1b6fa51308584748819207b0e12c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconDoozy.png using Guid(a1b6fa51308584748819207b0e12c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5919d7ff7fd55ac36374fc069976e4f') in 0.014365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaPaperPlane.png
+  artifactKey: Guid(5cfeae37f50f6054f8500a440697335d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaPaperPlane.png using Guid(5cfeae37f50f6054f8500a440697335d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a105ba2ac4198db2277ef1d0aa99b4bf') in 0.014036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonAboutActiveDark.png
+  artifactKey: Guid(f655ac216f9c4f540be02d585fe9ac30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonAboutActiveDark.png using Guid(f655ac216f9c4f540be02d585fe9ac30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22fc876d619653529b4f97cfb842e93') in 0.014937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/SwitchEnabledHoverDark.png
+  artifactKey: Guid(ea88d44738322d44596b3d83526f4773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/SwitchEnabledHoverDark.png using Guid(ea88d44738322d44596b3d83526f4773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66821ae43999c991bc7720552d794ec8') in 0.015123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaAtomAlt.png
+  artifactKey: Guid(17b04f8b77f4fd5489e42727a8942ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaAtomAlt.png using Guid(17b04f8b77f4fd5489e42727a8942ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b20cf7a4f808086480e4dc1370588a6') in 0.012953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/textures/normal.jpg
+  artifactKey: Guid(853943b2b36a4624ab8455cd26861c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/textures/normal.jpg using Guid(853943b2b36a4624ab8455cd26861c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d3b5e03f5eba54bf053bbb8e993d8d') in 1.187311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretFade/17.png
+  artifactKey: Guid(ae88caafa1621424d97c85ae79f2646d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretFade/17.png using Guid(ae88caafa1621424d97c85ae79f2646d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed35a70b9cad7e777ad4f1cf6cb31dc') in 0.012719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretMove/14.png
+  artifactKey: Guid(397fe6a282136f14582bf44d61842acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretMove/14.png using Guid(397fe6a282136f14582bf44d61842acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2945eb26bf6e623adf68dd45102d921a') in 0.011238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretRotate/1.png
+  artifactKey: Guid(516eccf387a6fc7439445708da8e2613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretRotate/1.png using Guid(516eccf387a6fc7439445708da8e2613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd9292b36d82f66e015d2575fd40dd5') in 0.009861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretMove/7.png
+  artifactKey: Guid(b4ed82f1479551149b912de968b82111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretMove/7.png using Guid(b4ed82f1479551149b912de968b82111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7dc3f50d3730623c449eddb805a5d8f') in 0.009436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretMove/17.png
+  artifactKey: Guid(b8ae7b2ac09507c4cb7cfb70c01d37d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretMove/17.png using Guid(b8ae7b2ac09507c4cb7cfb70c01d37d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fa2120c0559306f3b1d04c3245213e') in 0.012292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretMove/8.png
+  artifactKey: Guid(78fb4bcbf616a8f448bc94d50cd7a127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretMove/8.png using Guid(78fb4bcbf616a8f448bc94d50cd7a127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96465b8c5bf2656eb18f0ee5a98bee0d') in 0.013452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/5.png
+  artifactKey: Guid(620d53310b194384a8a5281a24800377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/5.png using Guid(620d53310b194384a8a5281a24800377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7163285684705630664bfdc7154caca7') in 0.011169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretScale/8.png
+  artifactKey: Guid(6025c5b47a3931b459aada353a92ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretScale/8.png using Guid(6025c5b47a3931b459aada353a92ed35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20df9419ba9c4836ddeb35b45b71086') in 0.013842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretScale/17.png
+  artifactKey: Guid(5d4b120096ee30041be7cf2510bf0348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretScale/17.png using Guid(5d4b120096ee30041be7cf2510bf0348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e643d3fc06f024a4b41d2c2c9781b91') in 0.009942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/Caret/11.png
+  artifactKey: Guid(82a60d9b4b7ac964ba121486767cab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/Caret/11.png using Guid(82a60d9b4b7ac964ba121486767cab29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87d9d541d37ab6b4ce9717efeb35566') in 0.010323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretRotate/14.png
+  artifactKey: Guid(336beaaf29dc70f4ca1d3f04ee912a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretRotate/14.png using Guid(336beaaf29dc70f4ca1d3f04ee912a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bde8257fc7bc1c06d9b44ec04fbaab') in 0.012774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/17.png
+  artifactKey: Guid(80510c7f1254eb74892d5b23933f1877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/17.png using Guid(80510c7f1254eb74892d5b23933f1877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628dffd7cb807fd22103e12086d2fd09') in 0.010330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretFade/10.png
+  artifactKey: Guid(8623b31c2f84d9647b27ae5243f88ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretFade/10.png using Guid(8623b31c2f84d9647b27ae5243f88ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a56412c26a0abad20873a487e7bc0c1') in 0.011091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/13.png
+  artifactKey: Guid(8ec1cc6f34ed6fc41975544cd00fe400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/13.png using Guid(8ec1cc6f34ed6fc41975544cd00fe400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d20235ae0169b564b2225be39354ad') in 0.011014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretFade/6.png
+  artifactKey: Guid(8633c88c040f6704396107fa3ff53e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretFade/6.png using Guid(8633c88c040f6704396107fa3ff53e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4433e7ae2bf61e459791826a755e6aae') in 0.013947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonTemplatesSelectedDark.png
+  artifactKey: Guid(7de9212ff5529fd47930a386cf703d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonTemplatesSelectedDark.png using Guid(7de9212ff5529fd47930a386cf703d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd60b4264bb92dd2210671f083cfcc94') in 0.009597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonTouchyActiveLight.png
+  artifactKey: Guid(b4ddecd49ff31c846b9b0b47703f9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonTouchyActiveLight.png using Guid(b4ddecd49ff31c846b9b0b47703f9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0177204ab6477bc6334efaaea34929db') in 0.010310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Free_Shmup_Sprites_Starfield.png
+  artifactKey: Guid(76790d87a6ceac544a057439dbe4d6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Free_Shmup_Sprites_Starfield.png using Guid(76790d87a6ceac544a057439dbe4d6c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89631c1176424d1d09a40fae324bfbe9') in 0.014828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/2.png
+  artifactKey: Guid(05bc63236c7e1bc46b5981bc626a951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/2.png using Guid(05bc63236c7e1bc46b5981bc626a951b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707fde5156eb628de6d8a39cf5e6a758') in 0.012389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/17.png
+  artifactKey: Guid(6b33f3fe6168692449b37d943bb6bb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/17.png using Guid(6b33f3fe6168692449b37d943bb6bb32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c6490898ca3d42a44cd2ed7d383de2') in 0.013078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretScale/5.png
+  artifactKey: Guid(2b39665a893d2bb418ca96a4bbe01a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretScale/5.png using Guid(2b39665a893d2bb418ca96a4bbe01a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b238e1800a6a0f3194f9d1ac8d96bd73') in 0.011438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretScale/6.png
+  artifactKey: Guid(8090e868ca8c3ac49bd5f845512dfe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretScale/6.png using Guid(8090e868ca8c3ac49bd5f845512dfe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91bf1f321721dafd9257ae1a7dfc9a4') in 0.012197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/2.png
+  artifactKey: Guid(83a4b317e13b8d148bff121085875687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/2.png using Guid(83a4b317e13b8d148bff121085875687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a513da5b8b287af2ae433313188f2a') in 0.011937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/Caret/10.png
+  artifactKey: Guid(15a39834258fca548921ade73decd21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/Caret/10.png using Guid(15a39834258fca548921ade73decd21f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1b5efe319f79c2296dc4bc41bce0b1') in 0.014341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ClassIconProgressTargetAudioMixer.png
+  artifactKey: Guid(c100aba33297aae40867e92b0334c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ClassIconProgressTargetAudioMixer.png using Guid(c100aba33297aae40867e92b0334c394) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ce2619bb70a3f7dd348e7dbed11ecd') in 0.018945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonAboutActiveLight.png
+  artifactKey: Guid(da71b298b4f7b6f41be75581c9ffa26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonAboutActiveLight.png using Guid(da71b298b4f7b6f41be75581c9ffa26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2e2743d7b5bb98f2f5ba1de8cb3811') in 0.009544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderProgressTargetAudioMixerDark.png
+  artifactKey: Guid(34e5afc0627dc8544875e278e5402bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderProgressTargetAudioMixerDark.png using Guid(34e5afc0627dc8544875e278e5402bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8efaaf3841048f004cadd1b9d60ce954') in 0.010347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/TabToTopActiveLight.png
+  artifactKey: Guid(4c9fd6435fe85154f923af9dd53fea0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/TabToTopActiveLight.png using Guid(4c9fd6435fe85154f923af9dd53fea0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6302a89d94bf9c4c9e2eb4ff30c3d0') in 0.010490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/TabToTopSelectedDark.png
+  artifactKey: Guid(64230076bd08f144a98c60c4e135e20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/TabToTopSelectedDark.png using Guid(64230076bd08f144a98c60c4e135e20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad0bec7102d88ed8ffad7a46f44e78b') in 0.010386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonLoadNormalDark.png
+  artifactKey: Guid(1f7b3711e6e07554485ac2490b45c08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonLoadNormalDark.png using Guid(1f7b3711e6e07554485ac2490b45c08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dec59e1277550fb046250e81a1fb0a8') in 0.008989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaBrain.png
+  artifactKey: Guid(bb157790c9abd924f943925975ac72b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaBrain.png using Guid(bb157790c9abd924f943925975ac72b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e89c9f8c13f71d2b92f44570f5c6c5d') in 0.011183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowAltFromRight.png
+  artifactKey: Guid(f8f3c5cfc721e754e8e245c614c122f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowAltFromRight.png using Guid(f8f3c5cfc721e754e8e245c614c122f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d91be40df4a372f2e7bc31538517cf0') in 0.015755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/SwitchDisabledActiveLight.png
+  artifactKey: Guid(b6759cbcd6f15524b9a19dec66563e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/SwitchDisabledActiveLight.png using Guid(b6759cbcd6f15524b9a19dec66563e57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a6df0caa8885775d2b17c973e4b375') in 0.010034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUIAnimations.png
+  artifactKey: Guid(547ed2b711f3e7d4cbd17f23e0fcc1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUIAnimations.png using Guid(547ed2b711f3e7d4cbd17f23e0fcc1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25d7a1629c38f0bf093ac309440b84d') in 0.007947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretScale/9.png
+  artifactKey: Guid(50d78c1bca004564282b55b58a24e0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretScale/9.png using Guid(50d78c1bca004564282b55b58a24e0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c42bf64617436deb10241df637b90ad') in 0.012041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeIconRandomNode.png
+  artifactKey: Guid(560aa29490934904893e239fa5d5b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeIconRandomNode.png using Guid(560aa29490934904893e239fa5d5b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e093c42588e772013c9f68828d0927') in 0.015408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderColorTargetImageLight.png
+  artifactKey: Guid(cac776cc2197e7547b41a3c1d2591990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderColorTargetImageLight.png using Guid(cac776cc2197e7547b41a3c1d2591990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5545f08777f519ddba85ffc10ea9234e') in 0.011955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/29.png
+  artifactKey: Guid(4b814f9e1da06bc41be520160270f429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/29.png using Guid(4b814f9e1da06bc41be520160270f429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d6329516cb3b04e122fe892748a109') in 0.010101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIToggleLight.png
+  artifactKey: Guid(0ca3deb51a2e212429ba2a0647976a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIToggleLight.png using Guid(0ca3deb51a2e212429ba2a0647976a9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda36c92c8cdf3121fed2795904d4b2d') in 0.010247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/MemoryPoolMonitor/Editor/TriangleDown.png
+  artifactKey: Guid(fd2add38dc259eb49a3e7fc331758b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/MemoryPoolMonitor/Editor/TriangleDown.png using Guid(fd2add38dc259eb49a3e7fc331758b7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14cdea78edfae6d5d2ccb37b56918738') in 0.011027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderApplicationQuitNodeDark.png
+  artifactKey: Guid(61238592447077e45addf5c8672fadeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderApplicationQuitNodeDark.png using Guid(61238592447077e45addf5c8672fadeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d16a1e04f021e2110e5a304979e50d1') in 0.011899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowDown.png
+  artifactKey: Guid(a3e0132fdafdd6a4fa24a16480a5b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowDown.png using Guid(a3e0132fdafdd6a4fa24a16480a5b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb1fe87ec254e54f270ab8ea04bf06f') in 0.010425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Textures/1K_Body-TXTR.jpg
+  artifactKey: Guid(edc2b3bfe412721409008df82ad98102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Textures/1K_Body-TXTR.jpg using Guid(edc2b3bfe412721409008df82ad98102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0378799a5c1fd61a37dbdd962a3085') in 0.031316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001405 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaCalculatorAlt.png
+  artifactKey: Guid(1078b5942d58b0242a506cdb1e1349a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaCalculatorAlt.png using Guid(1078b5942d58b0242a506cdb1e1349a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef96cf15799b8760e53a9728390b2f1') in 0.012168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaPaperclip.png
+  artifactKey: Guid(8eff968337b8fef4290fd7f2cfac3154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaPaperclip.png using Guid(8eff968337b8fef4290fd7f2cfac3154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc47a0765282b2b322b35fca16e1a48') in 0.014946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaBrackets.png
+  artifactKey: Guid(df6d0377762b5e847a7860604b725058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaBrackets.png using Guid(df6d0377762b5e847a7860604b725058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83287b6b2c24be851ace3936e2d27bad') in 0.013268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonDisabledActiveLight.png
+  artifactKey: Guid(775a8d953b7f2ee40a2342507dea8408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonDisabledActiveLight.png using Guid(775a8d953b7f2ee40a2342507dea8408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba2aabb7311143b845e99e62394ba37') in 0.012849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/29.png
+  artifactKey: Guid(bda05c1b042b5c143aeab17f480422c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/29.png using Guid(bda05c1b042b5c143aeab17f480422c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e6b2bc1bddf32328f0c684eea7fcbe') in 0.013495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CheckBoxMultiValuesNormalLight.png
+  artifactKey: Guid(770fe61226a13ec408dcf9fd65127fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CheckBoxMultiValuesNormalLight.png using Guid(770fe61226a13ec408dcf9fd65127fdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabb249a66f671c040fc5723b55169da') in 0.012904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeFooterDark.png
+  artifactKey: Guid(50d29b5ad167e0e4e87787667a3a4f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeFooterDark.png using Guid(50d29b5ad167e0e4e87787667a3a4f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e1a48e143f1235508fa6e9b4b3aa24') in 0.011315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIImageLight.png
+  artifactKey: Guid(42ae697888a52f942ac24ba8c5e5d5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIImageLight.png using Guid(42ae697888a52f942ac24ba8c5e5d5e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '120ce4e725cdfffb345c6cc71840ddf7') in 0.011688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaUserSecret.png
+  artifactKey: Guid(b3b3b4cf98fc4954a812966ed50c9dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaUserSecret.png using Guid(b3b3b4cf98fc4954a812966ed50c9dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3e4e82d484aa4533e8a35d1e43fb663') in 0.009175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/9.png
+  artifactKey: Guid(46666ba91c42f8d4bbec18f3d7c3a514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/9.png using Guid(46666ba91c42f8d4bbec18f3d7c3a514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351966bc2c6d9d564368bddb4dbb22f2') in 0.009975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretRotate/10.png
+  artifactKey: Guid(01711387465771743aade169e9e6b84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretRotate/10.png using Guid(01711387465771743aade169e9e6b84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126b5d30ee857a026a3356925e894988') in 0.013230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/12.png
+  artifactKey: Guid(96232892f49e02749bfbec4a07f12529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/12.png using Guid(96232892f49e02749bfbec4a07f12529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926913308f25c4456a3f8e763514ba25') in 0.010597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000950 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaLock.png
+  artifactKey: Guid(dd5481faa0141774cbc524f6cb7623ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaLock.png using Guid(dd5481faa0141774cbc524f6cb7623ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86d3d38e9e2c4a1839a14c7e99ae57d') in 0.013997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaVrCardboard.png
+  artifactKey: Guid(be2db062def3e024f81b4c15600fcb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaVrCardboard.png using Guid(be2db062def3e024f81b4c15600fcb3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d11ff04f7eb8f8e670692accb697849') in 0.012784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconButtonUnlinkActive.png
+  artifactKey: Guid(f0752bbd75d366142ba30ea9da68b1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconButtonUnlinkActive.png using Guid(f0752bbd75d366142ba30ea9da68b1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1216aa6e3489cef6846c7c621125cda') in 0.011077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFontAsset.png
+  artifactKey: Guid(63fb8e012bc9a9049ab0067264a2c3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFontAsset.png using Guid(63fb8e012bc9a9049ab0067264a2c3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a18a337fc3ad71b4be6f6f1f17fa9d00') in 0.022935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaPlug.png
+  artifactKey: Guid(5a507b201356db84398e61399456e2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaPlug.png using Guid(5a507b201356db84398e61399456e2bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f2725330e959fe9e34ad46eb93a968') in 0.010600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaUnlock.png
+  artifactKey: Guid(8a39e41f3d94f2f488da360354811327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaUnlock.png using Guid(8a39e41f3d94f2f488da360354811327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e54adabb17f387292cfb082cf7d703') in 0.012711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Fonts/space age.ttf
+  artifactKey: Guid(fd8f821504719f7459be663fb8591ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Fonts/space age.ttf using Guid(fd8f821504719f7459be663fb8591ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e65382db8b465a9e2ffebba06cc539') in 2.332252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretFade/14.png
+  artifactKey: Guid(46e01e86f976c3e4bbc75f6828e5e0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretFade/14.png using Guid(46e01e86f976c3e4bbc75f6828e5e0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3719ee13296edc7c14c13acafb3e3d') in 0.010228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/11.png
+  artifactKey: Guid(8b5062e3d1b2a4f44871c6ada5041449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/11.png using Guid(8b5062e3d1b2a4f44871c6ada5041449) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce07f28d4f6bea0a61a347d49dae5ceb') in 0.014990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFontTargetText.png
+  artifactKey: Guid(397c07d68af888a41b94ee77fb1febc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFontTargetText.png using Guid(397c07d68af888a41b94ee77fb1febc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f2ec18ea30fa169b67030e89647ca6') in 0.010759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/6.png
+  artifactKey: Guid(03a87ef88ae86814b8bcc77fa549ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/6.png using Guid(03a87ef88ae86814b8bcc77fa549ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a20783283550b6d12523188e93f7684') in 0.012242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaUser.png
+  artifactKey: Guid(1953bdbc16326e74e818b22835aec24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaUser.png using Guid(1953bdbc16326e74e818b22835aec24c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adec111dbf48b00adf585f5414679c3') in 0.017349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/14.png
+  artifactKey: Guid(d41c66ca80d058f4b8da08d4d84250ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/14.png using Guid(d41c66ca80d058f4b8da08d4d84250ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246101bba90f57fcd6623ae0f79fc7ba') in 0.009739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconProgressTarget.png
+  artifactKey: Guid(6f4fe8894cf26ba4cbeed618a1a4e6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconProgressTarget.png using Guid(6f4fe8894cf26ba4cbeed618a1a4e6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed15258d8b2a97e420bc0a3a8707d6e') in 0.013918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarSecondaryButtonActiveLight.png
+  artifactKey: Guid(f08cfb1382d885a41a28dc4a26e947d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarSecondaryButtonActiveLight.png using Guid(f08cfb1382d885a41a28dc4a26e947d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d1e4a8b157ecc210f0f670d87b5eaf') in 0.014261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowToBottom.png
+  artifactKey: Guid(878d73fb51ce6f84987ea19e3fb47adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowToBottom.png using Guid(878d73fb51ce6f84987ea19e3fb47adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b165d6e153b4c8aae38a550b882f0280') in 0.015384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaFilm.png
+  artifactKey: Guid(964b01b16d1b5ad4bafded6c11b49d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaFilm.png using Guid(964b01b16d1b5ad4bafded6c11b49d3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da12d172d9445055b00916b5e9ecb21f') in 0.015060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeOutlineLight.png
+  artifactKey: Guid(9f518202cf3c4424d8d9640955796d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeOutlineLight.png using Guid(9f518202cf3c4424d8d9640955796d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c32b9a09d9a035edd349ad19b2fd6c2') in 0.011037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonCloseSelectedDark.png
+  artifactKey: Guid(f4e1009080f28f743ae285f7d69b6feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonCloseSelectedDark.png using Guid(f4e1009080f28f743ae285f7d69b6feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc5a0f0cac7f68702d432e6e531d88c') in 0.017061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconThemeManager.png
+  artifactKey: Guid(f7ee6793908132947a467e6161d452f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconThemeManager.png using Guid(f7ee6793908132947a467e6161d452f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8e0e5c2c2393e0c7c2ab779fd30579') in 0.012350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretRotate/4.png
+  artifactKey: Guid(af819814cab4f8d4a894bd0d93dc4f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretRotate/4.png using Guid(af819814cab4f8d4a894bd0d93dc4f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5302055de8e7939401a8944444950b1d') in 0.012070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ButtonDisabledRightNormalLight.png
+  artifactKey: Guid(be8caa2976c13e7429cbc1b47598859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ButtonDisabledRightNormalLight.png using Guid(be8caa2976c13e7429cbc1b47598859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973f997894076fc1b837b80cb17ac3f1') in 0.012349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderGraphLight.png
+  artifactKey: Guid(2a6a59989207c5442b3ca8febeddc34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderGraphLight.png using Guid(2a6a59989207c5442b3ca8febeddc34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c6872cb70c4c61c7b6c96a69711050') in 0.013687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconButtonSaveActive.png
+  artifactKey: Guid(8ed1797aa27757148bfc089c90b89404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconButtonSaveActive.png using Guid(8ed1797aa27757148bfc089c90b89404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc359d250e3fb1b4b2a6bd742eb56fb') in 0.014442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaAngleDoubleLeft.png
+  artifactKey: Guid(f590349334eb02a43b588417842d7021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaAngleDoubleLeft.png using Guid(f590349334eb02a43b588417842d7021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5ec9ce881035b530d2f88573c23319') in 0.013815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/22.png
+  artifactKey: Guid(a24ff14ee6d55b24497dcb82f1c5268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/22.png using Guid(a24ff14ee6d55b24497dcb82f1c5268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c285f9331ddb2a4dd5b8e172574b8c01') in 0.009972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/28.png
+  artifactKey: Guid(a662664b99a4c3647b7ff71a5a6661a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/28.png using Guid(a662664b99a4c3647b7ff71a5a6661a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d96f256b0b28d8f738130d2cd33a21') in 0.017712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretMove/18.png
+  artifactKey: Guid(9d9db88a93f947e429314e2e8e823fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretMove/18.png using Guid(9d9db88a93f947e429314e2e8e823fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '557548e6c0cc52aa3d816cca32d23c0a') in 0.012102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/Resources/TestFromResource/TestTexture2.png
+  artifactKey: Guid(b425a440f0e76634497b592404c9d18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/IntegrationTests/Resources/TestFromResource/TestTexture2.png using Guid(b425a440f0e76634497b592404c9d18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077cb0ff261f041d8489abd624b23d1e') in 0.011365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaFilePdf.png
+  artifactKey: Guid(72a92cb2ff003734b9c4b25ea62ba484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaFilePdf.png using Guid(72a92cb2ff003734b9c4b25ea62ba484) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87f0273298478f38b3bba6c79e857e3') in 0.011181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/IconSubGraph.png
+  artifactKey: Guid(14cf59652ac6c8a469c14639f2268019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/IconSubGraph.png using Guid(14cf59652ac6c8a469c14639f2268019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8ca29003789ca0407c7795a27eccd3') in 0.015060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconHide.png
+  artifactKey: Guid(53bc10f271e9b604e881e245ad5fce8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconHide.png using Guid(53bc10f271e9b604e881e245ad5fce8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cab7c63c2fcbf45319f6bd21c048be3') in 0.011782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconButtonClick.png
+  artifactKey: Guid(2321c73b8a5fabf4fad86067133b94e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconButtonClick.png using Guid(2321c73b8a5fabf4fad86067133b94e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be598913d81e35a302ae31abb373f3fc') in 0.010296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/CaretFade/8.png
+  artifactKey: Guid(2b4ee806d8a72664888515b1e2026640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/CaretFade/8.png using Guid(2b4ee806d8a72664888515b1e2026640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80cf4b02223b1c80c74dcd00dde6fcd0') in 0.012413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaBackpack.png
+  artifactKey: Guid(c7fc5bbd795cc2f4dacbcf650aebfb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaBackpack.png using Guid(c7fc5bbd795cc2f4dacbcf650aebfb67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd331e0a2cf3c19c6b26e94ec6a6f923a') in 0.015386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconGestureListener.png
+  artifactKey: Guid(51819c680f7fade46b9c463113a02518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconGestureListener.png using Guid(51819c680f7fade46b9c463113a02518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7daf44c658a20cae5cfb1107b9bf6463') in 0.009787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/14.png
+  artifactKey: Guid(e25003d63a2c1814ab6599045c7ac83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Dark/14.png using Guid(e25003d63a2c1814ab6599045c7ac83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '923be5d692cb2a336c2334b1591418e0') in 0.010716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/Caret/25.png
+  artifactKey: Guid(e3f4227f91d2931428740f67ef2ec7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/Caret/25.png using Guid(e3f4227f91d2931428740f67ef2ec7bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b1651bb9680a2a6cfcf2d3822f2b71') in 0.011923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonHelpNormalLight.png
+  artifactKey: Guid(60a76042cc044014eb98118aae320411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonHelpNormalLight.png using Guid(60a76042cc044014eb98118aae320411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53b95f48fb87090cd1e79ea9e65060c') in 0.008798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledActiveLight.png
+  artifactKey: Guid(c0719a4b61977e54192ea93f6a99b38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledActiveLight.png using Guid(c0719a4b61977e54192ea93f6a99b38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3e24c0aa65aaa22ef7f62e63b9fd9a') in 0.008878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonHelpNormalDark.png
+  artifactKey: Guid(a0cd3c1a94af18743a28e731a9520914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonHelpNormalDark.png using Guid(a0cd3c1a94af18743a28e731a9520914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3083908af9e401ff4b86ac009b456178') in 0.018848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/ConnectionPointOverrideConnectedHoverDark.png
+  artifactKey: Guid(7be14ce1041f48f4a84c068f8cbc243b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/ConnectionPointOverrideConnectedHoverDark.png using Guid(7be14ce1041f48f4a84c068f8cbc243b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a709e1bb8f03e0bfb91318af048852e') in 0.010774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonViewsHoverLight.png
+  artifactKey: Guid(15ea0e7d554cc2b4688dd5548f589c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonViewsHoverLight.png using Guid(15ea0e7d554cc2b4688dd5548f589c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985befc2b48c138e31cf72e8e8e62aa4') in 0.009394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconBorder.png
+  artifactKey: Guid(811d60ed315d54c4eab797998e7ac156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconBorder.png using Guid(811d60ed315d54c4eab797998e7ac156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2208d3ae3f3059d7723912da1d870d') in 0.011389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonGameEventsActiveLight.png
+  artifactKey: Guid(a3984c0fc4da429418072bfd7fb743c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonGameEventsActiveLight.png using Guid(a3984c0fc4da429418072bfd7fb743c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9eb8c853699158ded3739cd7cc8a324') in 0.018721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/SwitchEnabledNormalLight.png
+  artifactKey: Guid(dfcd71568da140e43bd34770735e76fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/SwitchEnabledNormalLight.png using Guid(dfcd71568da140e43bd34770735e76fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a431acbae8917e6d0f311db5d322b3bf') in 0.010073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaPalette.png
+  artifactKey: Guid(abc365d165340a1409d817865d8bb660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaPalette.png using Guid(abc365d165340a1409d817865d8bb660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fa2051d6c46c52f6ac67f9cb892800') in 0.015221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonSaveAsActiveLight.png
+  artifactKey: Guid(beee87cafcc1c2249b4b3e71543b3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/WindowToolbarButtonSaveAsActiveLight.png using Guid(beee87cafcc1c2249b4b3e71543b3b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a0366b65f102d42ea2277f5ac1635f') in 0.012959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaExternalLink.png
+  artifactKey: Guid(ef8e465c618118c40b4d3b539623bbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaExternalLink.png using Guid(ef8e465c618118c40b4d3b539623bbee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ca94e30701b7b6f14e7dd6fea115df0') in 0.014142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaTh.png
+  artifactKey: Guid(027ea20d76f11b4469fcd8c964e6ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaTh.png using Guid(027ea20d76f11b4469fcd8c964e6ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cdce9df99274c620bdada30806338d') in 0.012463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderSubGraphDark.png
+  artifactKey: Guid(4267744238461b645b0e086f9ea464d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/ComponentHeaderSubGraphDark.png using Guid(4267744238461b645b0e086f9ea464d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2d62635f29cd02fae3bca1762ef1cb') in 0.012464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconUICanvas.png
+  artifactKey: Guid(eb4d720d565e66c4d85983eb208f69c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconUICanvas.png using Guid(eb4d720d565e66c4d85983eb208f69c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3c755a01385f03249a3116f9dc14966') in 0.017378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUICanvasLight.png
+  artifactKey: Guid(be71a6bb2930f46429bc23fdb5cc3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUICanvasLight.png using Guid(be71a6bb2930f46429bc23fdb5cc3b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1824a1621dfc81ddddda76e230c4c983') in 0.012032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaArrowsV.png
+  artifactKey: Guid(5003c9cf06e37fa44a997cea66b8c42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaArrowsV.png using Guid(5003c9cf06e37fa44a997cea66b8c42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9d6339f6dc008964e1b6893aa4b71d') in 0.012693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaBan.png
+  artifactKey: Guid(df36e59334573b24783128d62e227cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaBan.png using Guid(df36e59334573b24783128d62e227cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0a5552353c7285d76619eff4f6d845') in 0.018913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconStopSound.png
+  artifactKey: Guid(b50f5f0a4fff02444bf11d1aa91ed3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconStopSound.png using Guid(b50f5f0a4fff02444bf11d1aa91ed3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049f32149b4910fd6104191b5d08a3b1') in 0.010374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledNormalDark.png
+  artifactKey: Guid(3ea3f88b5a1f4954c8c9a7f043b46b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/RadioButtonEnabledNormalDark.png using Guid(3ea3f88b5a1f4954c8c9a7f043b46b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ae4fcbc6ae3cdaad1141054e8bdaf7') in 0.011153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconMinus.png
+  artifactKey: Guid(3e7d838afd36b4946a4da8fd8a785340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconMinus.png using Guid(3e7d838afd36b4946a4da8fd8a785340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f2da344d843a5b52ad779029250585') in 0.013917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIDrawerLight.png
+  artifactKey: Guid(0663c70d35ef53f4d815d41424a6618b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderUIDrawerLight.png using Guid(0663c70d35ef53f4d815d41424a6618b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299643f24025459847579a4a3dfaf9e1') in 0.010376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/4.png
+  artifactKey: Guid(b98f62d3b52f64f47b50c2099f2ca135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Light/4.png using Guid(b98f62d3b52f64f47b50c2099f2ca135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb375d18339c7ab3cac58b326b8687ca') in 0.015920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/24.png
+  artifactKey: Guid(d2d3ad62a8377fc409c8a18cf504f3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyToolbarHeader/Light/24.png using Guid(d2d3ad62a8377fc409c8a18cf504f3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d510a7684b66dfa652bed490db0927d') in 0.012714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/ConnectionPointOverrideConnectedNormalLight.png
+  artifactKey: Guid(4e179319c5d10d74eb7bf7d968a55d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/ConnectionPointOverrideConnectedNormalLight.png using Guid(4e179319c5d10d74eb7bf7d968a55d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660d06b1dd78d79d26641508effb08e2') in 0.009992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonCanvasesSelectedDark.png
+  artifactKey: Guid(6e5abd6953739324b946349f2bc07ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonCanvasesSelectedDark.png using Guid(6e5abd6953739324b946349f2bc07ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad9bb76bc4dcf962301e9ce72697476') in 0.014536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaUnlink.png
+  artifactKey: Guid(54818baf008f4124a850fe20c5698c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaUnlink.png using Guid(54818baf008f4124a850fe20c5698c6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '876b59b436a1282069f423625122f150') in 0.015377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderStylesUtilityDark.png
+  artifactKey: Guid(8c8cb321e9219be4abbe3b58c5cef311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderStylesUtilityDark.png using Guid(8c8cb321e9219be4abbe3b58c5cef311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77fdafa3f97887f427bf01ffd36ed56e') in 0.010465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/NodeIconUIDrawerNode.png
+  artifactKey: Guid(bddc8e281a7131543b5ffd8157626b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/NodeIconUIDrawerNode.png using Guid(bddc8e281a7131543b5ffd8157626b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e669a68e7425529a50587964dc6c98de') in 0.011417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodeDotDark.png
+  artifactKey: Guid(12085d8d035362d4c96282a937cdac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodeDotDark.png using Guid(12085d8d035362d4c96282a937cdac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15088de99179b6e0103d09708905689') in 0.014589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonGeneralSelectedLight.png
+  artifactKey: Guid(47e2e56b89e67f147afdd46cb4a08d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonGeneralSelectedLight.png using Guid(47e2e56b89e67f147afdd46cb4a08d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27303b9374fe5ab162be932a7546ec44') in 0.009055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/Caret/13.png
+  artifactKey: Guid(1f7b5a1a943babc4993ed8bea551257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/Caret/13.png using Guid(1f7b5a1a943babc4993ed8bea551257d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59aac4ce215a4afb27477aafeed99409') in 0.009543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconSave.png
+  artifactKey: Guid(7c56a03e436e67840bc1314b2484ad61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconSave.png using Guid(7c56a03e436e67840bc1314b2484ad61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74e2c1c7302a66f43acb9cff19d820b') in 0.021459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaFilmAlt.png
+  artifactKey: Guid(6711be424daf6ef44a514634d1c853ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaFilmAlt.png using Guid(6711be424daf6ef44a514634d1c853ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a20cba68fbd2bc09ac2b8d00d0832b8') in 0.010172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconShow.png
+  artifactKey: Guid(9a8146a69792f6e43b525f243a4acbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconShow.png using Guid(9a8146a69792f6e43b525f243a4acbca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd6870ed514cadaa23c9faf0326b31e') in 0.012577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconDoozyUI.png
+  artifactKey: Guid(1f06735374ae55d4482e6d7001f20855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconDoozyUI.png using Guid(1f06735374ae55d4482e6d7001f20855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ad6a023731c2d0ce4c73d508119021') in 0.013923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaBluetooth.png
+  artifactKey: Guid(c295d016c42d3754ca123ece0c213f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaBluetooth.png using Guid(c295d016c42d3754ca123ece0c213f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75ceb990932e133049540acf154b0cf') in 0.013520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaRedo.png
+  artifactKey: Guid(217bf1e2d7fc5ce4482e5b5c40a326bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaRedo.png using Guid(217bf1e2d7fc5ce4482e5b5c40a326bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd78c8e7ad1173bd686d589d85449f2') in 0.013207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/1.png
+  artifactKey: Guid(3814a800be1b0cd4ab140c29b24cd48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Nody/Images/NodyToolbarHeader/Dark/1.png using Guid(3814a800be1b0cd4ab140c29b24cd48c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be4b970405e9c45ba3dcbe56544a4b7') in 0.013972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/IconFaMobileAlt.png
+  artifactKey: Guid(64892c8da33d32b479004821295d44ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/IconFaMobileAlt.png using Guid(64892c8da33d32b479004821295d44ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e744978b9ac448debd18eb78ce8d3eb7') in 0.011721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/textures/diffuse.tga
+  artifactKey: Guid(abd916b1dc28a7e4caffa584a9f2ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/textures/diffuse.tga using Guid(abd916b1dc28a7e4caffa584a9f2ee35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e0abe7dd6df8bec65a59856921064a') in 1.677281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.226336 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderRandomNodeDark.png
+  artifactKey: Guid(fc3d9e1586b2a304ba37367b01277cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderRandomNodeDark.png using Guid(fc3d9e1586b2a304ba37367b01277cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437fcaa4469632af11e1f376ef443fa7') in 0.012947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundyManagerDark.png
+  artifactKey: Guid(5c8b03ad527199743bc505f674f16546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundyManagerDark.png using Guid(5c8b03ad527199743bc505f674f16546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eac9b58b6608e7c63ef12806ae0a304') in 0.014855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundGroupDataDark.png
+  artifactKey: Guid(8e996193a65fa3f4f93c7cafb22ef098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundGroupDataDark.png using Guid(8e996193a65fa3f4f93c7cafb22ef098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b77793d1b72605b38a2c325c0dcd06') in 0.011078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSceneDirectorDark.png
+  artifactKey: Guid(62cc687dd15916e4ab3a78dce5de141a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSceneDirectorDark.png using Guid(62cc687dd15916e4ab3a78dce5de141a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39cabd270cd5fe66bb4850cd52463ca9') in 0.011132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001259 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundyControllerLight.png
+  artifactKey: Guid(cce009943fc788042b0f2af43acdc9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/ComponentHeaderSoundyControllerLight.png using Guid(cce009943fc788042b0f2af43acdc9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5555e230ed4456f23c3a4cdf59b4e2f') in 0.017200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.984462 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonKeysActiveLight.png
+  artifactKey: Guid(216c4e792ce1c314f94feb1aa98aecfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonKeysActiveLight.png using Guid(216c4e792ce1c314f94feb1aa98aecfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8d943a2f0cd8b90e9e0c0a147f38f9') in 0.009604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonNodyHoverLight.png
+  artifactKey: Guid(f92632f0e45746f47976588c65a1001d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonNodyHoverLight.png using Guid(f92632f0e45746f47976588c65a1001d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458abe3269633c3eb518a9198472348e') in 0.014100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonPopupsHoverDark.png
+  artifactKey: Guid(4491fc4f15ca89b49a67b3ec7e113b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonPopupsHoverDark.png using Guid(4491fc4f15ca89b49a67b3ec7e113b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7101b56f5434dc0a5917967f10bf2ca5') in 0.009529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonKeysHoverLight.png
+  artifactKey: Guid(326c004d755b4a946b604242fff4b555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonKeysHoverLight.png using Guid(326c004d755b4a946b604242fff4b555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2cc5e394d4a16abfee34ff000dd236') in 0.007387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonNodySelectedLight.png
+  artifactKey: Guid(89505b55e94d3db4989053ffc893fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonNodySelectedLight.png using Guid(89505b55e94d3db4989053ffc893fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '697788bd563ccb693ab3236e57dc93c1') in 0.012548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038770 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonPopupsSelectedDark.png
+  artifactKey: Guid(969d8975d2ab1e644bb826f7fdcfd8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonPopupsSelectedDark.png using Guid(969d8975d2ab1e644bb826f7fdcfd8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30607da304f7cfa8ce484ef9db2a3a1') in 0.010177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsActiveDark.png
+  artifactKey: Guid(24b88c3e12c1caa43a89ef68e496a81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsActiveDark.png using Guid(24b88c3e12c1caa43a89ef68e496a81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961a4935300241009083c9c4a3c6870e') in 0.012955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsHoverDark.png
+  artifactKey: Guid(02c372ee4a3628c4cb3ebb35845b76fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsHoverDark.png using Guid(02c372ee4a3628c4cb3ebb35845b76fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a502938170e335c9757de440a9772126') in 0.014911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsSelectedDark.png
+  artifactKey: Guid(ca75297750b874e4caec39eea2a3a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsSelectedDark.png using Guid(ca75297750b874e4caec39eea2a3a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f491de9bacd1f3e73600d7292e8b2f') in 0.010321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsActiveLight.png
+  artifactKey: Guid(4a542b65a9ec39c4080c670468a9eeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Doozy/Editor/Images/DoozyWindowToolbarButtonSettingsActiveLight.png using Guid(4a542b65a9ec39c4080c670468a9eeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdea5765fd3f2e03ecc105775253fda0') in 0.012547 seconds 
