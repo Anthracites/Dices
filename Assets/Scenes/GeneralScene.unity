@@ -11709,8 +11709,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -220.25977}
-  m_SizeDelta: {x: 2324.9646, y: 660.7794}
+  m_AnchoredPosition: {x: 0, y: -250.41362}
+  m_SizeDelta: {x: 1974.6791, y: 751.24084}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &509250357
 MonoBehaviour:
@@ -11734,19 +11734,19 @@ MonoBehaviour:
     basis: 25
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 318.8352
+    runtimeItemSize: 187.81021
     runtimeRectTransform: {fileID: 1581857166}
   - grow: 2
     basis: 50
     basisType: 1
     alignSelf: 0
-    runtimeItemSize: 637.6704
+    runtimeItemSize: 375.62042
     runtimeRectTransform: {fileID: 1921360883}
   - grow: 1
     basis: 25
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 318.8352
+    runtimeItemSize: 187.81021
     runtimeRectTransform: {fileID: 710601878}
 --- !u!114 &509250358
 MonoBehaviour:
@@ -23223,8 +23223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -956.5056}
-  m_SizeDelta: {x: 1006.848, y: 318.8352}
+  m_AnchoredPosition: {x: 0, y: -563.43066}
+  m_SizeDelta: {x: 1974.6791, y: 187.81021}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &710601879
 MonoBehaviour:
@@ -42878,6 +42878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _emailLink: mailto:dicesapp@gmail.com
+  _storeLink: https://play.google.com/store/apps/details?id=com.AnthraciteStrixdev.Dices
+  _privacyPolicy: https://dicesapp.blogspot.com/2022/07/privacy-policy-for-dices.html
   _middleFlexBox: {fileID: 509250357}
   _myPopUp: {fileID: 5943623128130003800}
 --- !u!114 &1305445786
@@ -42944,19 +42946,19 @@ MonoBehaviour:
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 220.2598
+    runtimeItemSize: 250.41362
     runtimeRectTransform: {fileID: 5947815014894605346}
   - grow: 3
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 660.7794
+    runtimeItemSize: 751.24084
     runtimeRectTransform: {fileID: 509250356}
   - grow: 1
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 220.2598
+    runtimeItemSize: 250.41362
     runtimeRectTransform: {fileID: 2024029363}
 --- !u!1 &1317132539
 GameObject:
@@ -43334,7 +43336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -12.015625, y: -145.89978}
+  m_AnchoredPosition: {x: -12.015747, y: -145.89978}
   m_SizeDelta: {x: 242.7, y: -337.09998}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1364998655
@@ -46788,7 +46790,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1006.848, y: 318.8352}
+  m_SizeDelta: {x: 1974.6791, y: 187.81021}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1581857167
 MonoBehaviour:
@@ -59944,8 +59946,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -318.8352}
-  m_SizeDelta: {x: 1006.848, y: 637.6704}
+  m_AnchoredPosition: {x: 0, y: -187.81021}
+  m_SizeDelta: {x: 1974.6791, y: 375.62042}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1921360884
 MonoBehaviour:
@@ -62445,8 +62447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -881.0392}
-  m_SizeDelta: {x: 2324.9646, y: 220.2598}
+  m_AnchoredPosition: {x: 0, y: -1001.6545}
+  m_SizeDelta: {x: 1974.6791, y: 250.41362}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2024029364
 MonoBehaviour:
@@ -68633,9 +68635,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UI_InformPopUp, Assembly-CSharp
-          m_MethodName: OpenEmail
+        - m_Target: {fileID: 1305445785}
+          m_TargetAssemblyTypeName: Dices.UserInterface.UI_View_Inform, Assembly-CSharp
+          m_MethodName: OpenPP
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -77613,6 +77615,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   C_PRODUCTS:
   - Donate_1
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 'Donate_5 '
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Donate_10
 --- !u!114 &5943623128130003809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77974,7 +77996,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2324.9646, y: 220.2598}
+  m_SizeDelta: {x: 1974.6791, y: 250.41362}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5954851227412315626
 MonoBehaviour:
@@ -78199,7 +78221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1506257123971731328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1305445785}
+        m_TargetAssemblyTypeName: Dices.UserInterface.UI_View_Inform, Assembly-CSharp
+        m_MethodName: OpenStore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &7458302576800765205
 RectTransform:
   m_ObjectHideFlags: 0
