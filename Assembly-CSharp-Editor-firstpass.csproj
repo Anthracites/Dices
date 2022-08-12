@@ -1054,6 +1054,10 @@
       <Project>{268F2A21-0720-D06B-F958-A92585F29487}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
+      <Project>{2E78B5B8-E321-55F9-7017-EEA4B6437AED}</Project>
+      <Name>Unity.Sysroot.Linux_x86_64</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{837716AA-D6C0-91BA-5DF7-AB7FB8E50235}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
@@ -1062,6 +1066,10 @@
       <Project>{2A1357BA-8C37-533B-0796-8809F026063C}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Analytics.Editor.csproj">
+      <Project>{A388F24F-C912-17C7-FC3D-E79FB3FC0567}</Project>
+      <Name>Unity.Services.Analytics.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{BAFE92D1-9A57-E2E4-B49C-695AB73CC9AB}</Project>
       <Name>Unity.TextMeshPro</Name>
@@ -1069,6 +1077,10 @@
     <ProjectReference Include="UnityEngine.Purchasing.SecurityStub.csproj">
       <Project>{23A705FC-810F-3F57-3120-E461E944C04A}</Project>
       <Name>UnityEngine.Purchasing.SecurityStub</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Analytics.csproj">
+      <Project>{B627C0A4-F887-B8C3-D7FC-81B1BE17814F}</Project>
+      <Name>Unity.Services.Analytics</Name>
     </ProjectReference>
     <ProjectReference Include="Zenject-Editor.csproj">
       <Project>{49BDE074-8B91-A4FA-7039-6B7E44B1072B}</Project>
@@ -1114,6 +1126,10 @@
       <Project>{95D6E40E-3C7E-FCAB-7DC7-CE5F4DB6D93B}</Project>
       <Name>UnityEngine.Purchasing.Codeless</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Toolchain.Macos-x86_64-Linux-x86_64.csproj">
+      <Project>{8A292200-BE21-7F40-C36D-1E087EE93C84}</Project>
+      <Name>Unity.Toolchain.Macos-x86_64-Linux-x86_64</Name>
+    </ProjectReference>
     <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
       <Project>{A9D8BA52-6E66-6BF0-8746-16DFC73058E8}</Project>
       <Name>Zenject-ReflectionBaking-Editor</Name>
@@ -1137,14 +1153,6 @@
     <ProjectReference Include="UnityEditor.Purchasing.csproj">
       <Project>{3EDB1168-4F25-A456-C0B0-856ED38A1113}</Project>
       <Name>UnityEditor.Purchasing</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Toolchain.Macos-x86_64-Linux-x86_64.csproj">
-      <Project>{8A292200-BE21-7F40-C36D-1E087EE93C84}</Project>
-      <Name>Unity.Toolchain.Macos-x86_64-Linux-x86_64</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
-      <Project>{2E78B5B8-E321-55F9-7017-EEA4B6437AED}</Project>
-      <Name>Unity.Sysroot.Linux_x86_64</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
       <Project>{4056C316-80D3-77B4-5857-A058C12DEC89}</Project>

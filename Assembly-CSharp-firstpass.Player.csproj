@@ -933,6 +933,10 @@
       <Project>{163BA78B-FB90-C31C-415A-E02B64FE52A7}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Services.Analytics.Player.csproj">
+      <Project>{D7AA3D25-5410-F634-0E5F-FEB2B0B9E215}</Project>
+      <Name>Unity.Services.Analytics.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{145B7FFA-F67C-D990-DB11-C3E8E21D5841}</Project>
       <Name>UnityEngine.UI.Player</Name>

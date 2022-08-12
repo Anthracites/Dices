@@ -61,8 +61,10 @@
     <Compile Include="Assets/Scripts/DonationShow/FlashText.cs" />
     <Compile Include="Assets/Scripts/Managers/DonationManager.cs" />
     <Compile Include="Assets/Scripts/CameraRottion.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleStoreKitTestTangle.cs" />
     <Compile Include="Assets/Scripts/Managers/SettingsManager.cs" />
     <Compile Include="Assets/Scripts/OrientDetacter.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/AppleTangle.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Inform.cs" />
     <Compile Include="Assets/Scripts/Managers/ProjectContextInstaller.cs" />
     <Compile Include="Assets/Scripts/BigRerollButton.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Assets/packages/ui-flexbox/UIFlexbox.cs" />
     <Compile Include="Assets/Scripts/DiceSpawnCS.cs" />
     <Compile Include="Assets/Scripts/UI_Drawer_Container.cs" />
+    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
     <Compile Include="Assets/Scripts/ScoreCounter.cs" />
     <Compile Include="Assets/Scripts/PurchaseManager.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Play.cs" />
@@ -80,7 +83,6 @@
     <Compile Include="Assets/Scripts/DiceRotation.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Loading.cs" />
     <Compile Include="Assets/Scripts/DonationShow/DonationShowStart.cs" />
-    <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Prefabs/ErbGameArt Patreon/Standard/Shaders/FresnelM_Op.shader" />
@@ -675,6 +677,10 @@
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{163BA78B-FB90-C31C-415A-E02B64FE52A7}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Services.Analytics.Player.csproj">
+      <Project>{D7AA3D25-5410-F634-0E5F-FEB2B0B9E215}</Project>
+      <Name>Unity.Services.Analytics.Player</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{145B7FFA-F67C-D990-DB11-C3E8E21D5841}</Project>

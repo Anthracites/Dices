@@ -47,6 +47,24 @@ public class PurchaseManager : MonoBehaviour, IStoreListener
 
     public void BuyConsumable(int index)
     {
+
+        int _amount = _donationManager.DonationAmount;
+
+        switch (_amount)
+        {
+            case 1:
+                index = 0;
+                break;
+            case 5:
+                index = 10;
+                break;
+            case 10:
+                index = 20;
+                break;
+            default:
+                index = 20;
+                break;
+        }
         if (_donationManager.DonationAmount > 0)
         {
             currentProductIndex = index;
