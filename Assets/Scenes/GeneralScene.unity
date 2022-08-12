@@ -11709,7 +11709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250.41362}
+  m_AnchoredPosition: {x: 0, y: -250.41364}
   m_SizeDelta: {x: 1974.6791, y: 751.24084}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &509250357
@@ -43336,7 +43336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -12.015747, y: -145.89978}
+  m_AnchoredPosition: {x: -12.015869, y: -145.89978}
   m_SizeDelta: {x: 242.7, y: -337.09998}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &1364998655
@@ -68942,6 +68942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _thisPopUp: {fileID: 5943623128130003800}
+  _submitButton: {fileID: 5943623128044340412}
 --- !u!224 &1216019602431190642
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69516,7 +69517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.48108, y: -0.000091552734}
+  m_AnchoredPosition: {x: 68.48102, y: -0.000091552734}
   m_SizeDelta: {x: 370.8, y: 194.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3548934496915606158
@@ -74792,19 +74793,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5943623128044340357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5943623128130003808}
-        m_TargetAssemblyTypeName: PurchaseManager, Assembly-CSharp
-        m_MethodName: BuyConsumable
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5943623128044340357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74856,6 +74845,7 @@ GameObject:
   - component: {fileID: 5943623128044340357}
   - component: {fileID: 5943623128044340356}
   - component: {fileID: 5943623128044340411}
+  - component: {fileID: 5943623128044340412}
   m_Layer: 5
   m_Name: Submit_Button
   m_TagString: Untagged
@@ -77176,6 +77166,42 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 1
   TextLabel: {fileID: 0}
+--- !u!114 &5943623128044340412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5943623128044340409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36a5f511b0d8142cba0aeb92d0b264c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productId: 20
+  buttonType: 0
+  consumePurchase: 1
+  onPurchaseComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1204010890804952426}
+        m_TargetAssemblyTypeName: Dices.UserInterface.UI_PopUp_Donate, Assembly-CSharp
+        m_MethodName: GetSuccesfulPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPurchaseFailed:
+    m_PersistentCalls:
+      m_Calls: []
+  titleText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  priceText: {fileID: 0}
 --- !u!114 &5943623128130003800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77570,7 +77596,6 @@ GameObject:
   - component: {fileID: 5943623128130003801}
   - component: {fileID: 5943623128130003800}
   - component: {fileID: 1204010890804952426}
-  - component: {fileID: 5943623128130003808}
   - component: {fileID: 5943623128130003809}
   m_Layer: 5
   m_Name: DonatePopUp
@@ -77601,40 +77626,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2191, y: 272}
   m_SizeDelta: {x: -1179.9395, y: -544.04895}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5943623128130003808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5943623128130003806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247b2001b21c84b7bb208885e3da173b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  C_PRODUCTS:
-  - Donate_1
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 'Donate_5 '
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Donate_10
 --- !u!114 &5943623128130003809
 MonoBehaviour:
   m_ObjectHideFlags: 0

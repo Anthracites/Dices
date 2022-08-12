@@ -1,18 +1,14 @@
 ﻿<Properties StartupConfiguration="{428DC80A-E2DF-0D41-732A-D9ACE8DFC9C4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI_Vews/UI_View_Inform.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI_PopUp_Donate.cs">
     <Files>
-      <File FileName="Library/PackageCache/com.unity.purchasing@4.1.5/Runtime/Codeless/CodelessIAPStoreListener.cs" Line="56" Column="47" />
-      <File FileName="Assets/Scripts/PurchaseManager.cs" />
-      <File FileName="Library/PackageCache/com.unity.purchasing@4.1.5/Runtime/Purchasing/Product.cs" />
-      <File FileName="Library/PackageCache/com.unity.purchasing@4.1.5/Runtime/Purchasing/IStoreController.cs" />
-      <File FileName="Library/PackageCache/com.unity.purchasing@4.1.5/Runtime/Stores/StandardPurchasingModule.cs" />
-      <File FileName="Library/PackageCache/com.unity.purchasing@4.1.5/Runtime/Stores/AppStore.cs" />
-      <File FileName="Assets/Scripts/UI_Vews/UI_View_Inform.cs" Line="33" Column="49" />
+      <File FileName="Assets/Scripts/Managers/DonationManager.cs" Line="7" Column="39" />
+      <File FileName="Assets/Scripts/UI_PopUp_Donate.cs" Line="36" Column="10" />
+      <File FileName="Assets/Scripts/DonationShow/DonationShowStart.cs" Line="171" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="df2fac95-517f-459b-90c0-4a6a61748ef1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9f8fbb72-f57d-42e6-bceb-a4d8f4c8fad3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
