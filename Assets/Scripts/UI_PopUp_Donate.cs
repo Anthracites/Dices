@@ -2,6 +2,8 @@ using UnityEngine;
 using Doozy.Engine.UI;
 using Zenject;
 using Dices.UIConnection;
+using UnityEngine.Purchasing;
+using Doozy.Engine;
 
 namespace Dices.UserInterface
 {
@@ -12,6 +14,8 @@ namespace Dices.UserInterface
 
         [SerializeField]
         private UIPopup _thisPopUp;
+        [SerializeField]
+        private IAPButton _submitButton;
 
 
         private void Start()
@@ -26,10 +30,34 @@ namespace Dices.UserInterface
             _thisPopUp.Hide();
         }
 
+        public void GetSuccesfulPurchase()
+        {
+            GameEventMessage.SendEvent(EventsLibrary.OnSuccessConsumable);
+        }
+        
         public void ChooseDonationAmount(int _amount)
         {
             _donationManager.DonationAmount = _amount;
 
+            string _productID;
+
+            switch (_amount)
+            {
+                case 1:
+                    _productID = "0";
+                    break;
+                case 5:
+                    _productID = "10";
+                    break;
+                case 10:
+                    _productID = "20";
+                    break;
+                default:
+                    _productID = "20";
+                    break;
+            }
+
+            _submitButton.productId = _productID;
         }
     }
 }

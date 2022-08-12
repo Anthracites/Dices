@@ -1,1 +1,4 @@
 Product ID,Published State,Purchase Type,Auto Translate,Locale; Title; Description,Auto Fill Prices,Price,Pricing Template ID
+0,published,managed_by_android,false,en_US;Donate 1;Donate 1,false,,Donate_1
+10,published,managed_by_android,false,en_US;Donate 5;Donate 5,false,,Donate_5
+20,published,managed_by_android,false,en_US;Donate 10;Donate 10,false,,Donate_10
