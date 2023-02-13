@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Doozy.Engine;
 
 namespace Dices.GamePlay
 {
@@ -17,6 +18,10 @@ namespace Dices.GamePlay
         private float A, B, C;
         [SerializeField]
         private Quaternion Q;
+        [SerializeField]
+        private IEnumerator speedControl;
+        private Rigidbody rb;
+        private BoxCollider[] scores;
 
         public bool IsStoded = false;
         public bool IsStopByTimer = false;
@@ -34,7 +39,26 @@ namespace Dices.GamePlay
                 yield return new WaitForSeconds(0);
                 DiceRotationfunc();
             }
+
         }
+
+        public IEnumerator SpeedConrol()
+        {
+            Debug.Log("Coroutine started for " + gameObject.name);
+            while (rb.velocity.y == 0)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+
+            while (rb.velocity.y != 0)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+
+            GameEventMessage.SendEvent(EventsLibrary.CubeFalled);
+            StopCoroutine(speedControl);
+        }
+
 
         public void DestroySelf()
         {
@@ -53,10 +77,16 @@ namespace Dices.GamePlay
             IsStoded = true;
             gameObject.AddComponent<Rigidbody>();
             gameObject.GetComponent<Rigidbody>().mass = 100;
+            rb = gameObject.GetComponent<Rigidbody>();
+            speedControl = SpeedConrol();
+
+
             if (IsStopByTimer == true)
             {
                 StopAllCoroutines();
             }
+
+            StartCoroutine(speedControl);
         }
         void GetRotationParameters()
         {

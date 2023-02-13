@@ -16,34 +16,47 @@ namespace Dices.UserInterface
         [SerializeField]
         public int _score = 0;
         [SerializeField]
+        private int dicesAmount, falledDicesAmount;
+        [SerializeField]
         private GameObject[] _countCubes;
 
 
-        void OnTriggerEnter(Collider other)
+        //void OnTriggerEnter(Collider other)
+        //{
+        //    if (other.tag == "ScoreCube")
+        //    {
+        //        int m = (Int32.Parse(other.name));
+        //        _score += m;
+        //        _scoreManager.Score = _score;
+        //        _scoreManager.ScoreDetales[m - 1]++;
+        //    }
+        //    GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
+        //}
+
+        //void OnTriggerExit(Collider other)
+        //{
+        //    if (other.tag == "ScoreCube")
+        //    {
+        //        int m = (Int32.Parse(other.name));
+        //        _score -= m;
+        //        _scoreManager.Score = _score;
+        //        _scoreManager.ScoreDetales[m - 1]--;
+        //    }
+        //    GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
+        //}
+
+        public void CountFalledDices()
         {
-            if (other.tag == "ScoreCube")
+            falledDicesAmount++;
+
+            if (dicesAmount == falledDicesAmount)
             {
-                int m = (Int32.Parse(other.name));
-                _score += m;
-                _scoreManager.Score = _score;
-                _scoreManager.ScoreDetales[m - 1]++;
+                NoAnimCubeCount();
+                Debug.Log("Count falled dices");
             }
-            GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
         }
 
-        void OnTriggerExit(Collider other)
-        {
-            if (other.tag == "ScoreCube")
-            {
-                int m = (Int32.Parse(other.name));
-                _score -= m;
-                _scoreManager.Score = _score;
-                _scoreManager.ScoreDetales[m - 1]--;
-            }
-            GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
-        }
-
-        void NoAnimCubeCount()
+         void NoAnimCubeCount()
         {
             _countCubes = GameObject.FindGameObjectsWithTag("ScoreCube");
             foreach (GameObject CountCube in _countCubes)
@@ -57,11 +70,13 @@ namespace Dices.UserInterface
                 }
                 Destroy(CountCube);
             }
+            GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
         }
 
 
         public void ScoreCleaner()
         {
+            falledDicesAmount = 0;
             _score = 0;
             _scoreManager.Score = 0;
             int i = 0;
@@ -70,12 +85,13 @@ namespace Dices.UserInterface
                 _scoreManager.ScoreDetales[i] = 0;
                 i++;
             }
-            Debug.Log("ScoreCleared");
+//            Debug.Log("ScoreCleared");
             if (_settingsManager.IsAnimated == false)
             {
                 NoAnimCubeCount();
             }
             GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
+            dicesAmount = _settingsManager.DicesAmount;
         }
 
         public void WriteHistory()
@@ -100,7 +116,7 @@ namespace Dices.UserInterface
                 _scoreManager.ScoreHistory = _currScores;
                 GameEventMessage.SendEvent(EventsLibrary.ScoreHistoryWritten);
                 ScoreCleaner();
-                Debug.Log("HistiryWritten");
+//                Debug.Log("HistoryWritten");
             }
 
         }

@@ -83,6 +83,7 @@ namespace Dices.GamePlay
                 Vector3 SpawnPosition = new Vector3(coordZ, coordY, coordX);
                 Quaternion spawnRotation = new Quaternion(Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f));
                 GameObject inst_obj = Instantiate(_dicePref, SpawnPosition, spawnRotation);
+                inst_obj.name += i.ToString();
 
                 if (_stopMode == SettingsManager.StopMode.OnTimer)
                 {
@@ -90,10 +91,10 @@ namespace Dices.GamePlay
                 }
                 inst_obj.transform.parent = gameObject.transform;
                 i++;
-                if (_stopMode == SettingsManager.StopMode.Automatic)
-                {
-                    GameEventMessage.SendEvent(EventsLibrary.StopRotate);
-                }
+            }
+            if (_stopMode == SettingsManager.StopMode.Automatic)
+            {
+                GameEventMessage.SendEvent(EventsLibrary.StopRotate);
             }
         }
 

@@ -7079,6 +7079,7 @@ GameObject:
   - component: {fileID: 320727661}
   - component: {fileID: 320727662}
   - component: {fileID: 320727663}
+  - component: {fileID: 320727664}
   m_Layer: 0
   m_Name: CounterPlane
   m_TagString: Untagged
@@ -7178,6 +7179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _score: 0
+  dicesAmount: 0
+  falledDicesAmount: 0
   _countCubes: []
 --- !u!114 &320727662
 MonoBehaviour:
@@ -7250,6 +7253,36 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   GameEvent: ScoreHistoryWritten
+  ListenForAllGameEvents: 0
+--- !u!114 &320727664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320727656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea9f92203d31e240bc110ff7b26d05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DebugMode: 0
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 320727661}
+        m_TargetAssemblyTypeName: Dices.UserInterface.ScoreCounter, Assembly-CSharp
+        m_MethodName: CountFalledDices
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  GameEvent: CubeFalled
   ListenForAllGameEvents: 0
 --- !u!1 &345552288
 GameObject:
@@ -11709,8 +11742,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -250.41364}
-  m_SizeDelta: {x: 1974.6791, y: 751.24084}
+  m_AnchoredPosition: {x: 0, y: -347.2907}
+  m_SizeDelta: {x: 1302.3402, y: 1041.8721}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &509250357
 MonoBehaviour:
@@ -11734,19 +11767,19 @@ MonoBehaviour:
     basis: 25
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 187.81021
+    runtimeItemSize: 260.46802
     runtimeRectTransform: {fileID: 1581857166}
   - grow: 2
     basis: 50
     basisType: 1
     alignSelf: 0
-    runtimeItemSize: 375.62042
+    runtimeItemSize: 520.93604
     runtimeRectTransform: {fileID: 1921360883}
   - grow: 1
     basis: 25
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 187.81021
+    runtimeItemSize: 260.46802
     runtimeRectTransform: {fileID: 710601878}
 --- !u!114 &509250358
 MonoBehaviour:
@@ -23223,8 +23256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -563.43066}
-  m_SizeDelta: {x: 1974.6791, y: 187.81021}
+  m_AnchoredPosition: {x: 0, y: -781.40405}
+  m_SizeDelta: {x: 1302.3402, y: 260.46802}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &710601879
 MonoBehaviour:
@@ -42946,19 +42979,19 @@ MonoBehaviour:
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 250.41362
+    runtimeItemSize: 347.2907
     runtimeRectTransform: {fileID: 5947815014894605346}
   - grow: 3
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 751.24084
+    runtimeItemSize: 1041.8721
     runtimeRectTransform: {fileID: 509250356}
   - grow: 1
     basis: 0
     basisType: 0
     alignSelf: 0
-    runtimeItemSize: 250.41362
+    runtimeItemSize: 347.2907
     runtimeRectTransform: {fileID: 2024029363}
 --- !u!1 &1317132539
 GameObject:
@@ -46790,7 +46823,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1974.6791, y: 187.81021}
+  m_SizeDelta: {x: 1302.3402, y: 260.46802}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1581857167
 MonoBehaviour:
@@ -59946,8 +59979,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -187.81021}
-  m_SizeDelta: {x: 1974.6791, y: 375.62042}
+  m_AnchoredPosition: {x: 0, y: -260.46802}
+  m_SizeDelta: {x: 1302.3402, y: 520.93604}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1921360884
 MonoBehaviour:
@@ -62447,8 +62480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1001.6545}
-  m_SizeDelta: {x: 1974.6791, y: 250.41362}
+  m_AnchoredPosition: {x: 0, y: -1389.1628}
+  m_SizeDelta: {x: 1302.3402, y: 347.2907}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2024029364
 MonoBehaviour:
@@ -69517,7 +69550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.48102, y: -0.000091552734}
+  m_AnchoredPosition: {x: 68.48108, y: -0.000091552734}
   m_SizeDelta: {x: 370.8, y: 194.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3548934496915606158
@@ -77987,7 +78020,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1974.6791, y: 250.41362}
+  m_SizeDelta: {x: 1302.3402, y: 347.2907}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5954851227412315626
 MonoBehaviour:
