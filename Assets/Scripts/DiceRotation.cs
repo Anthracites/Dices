@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Doozy.Engine;
+using Dices.UIConnection;
+using Zenject;
 
 namespace Dices.GamePlay
 {
     public class DiceRotation : MonoBehaviour // Class for move dices
     {
+        [Inject]
+        ScoreManager _scoreManager;
 
         [SerializeField]
         private float angle = 20; // скорость поворота в градусах
@@ -26,7 +30,7 @@ namespace Dices.GamePlay
         public bool IsStoded = false;
         public bool IsStopByTimer = false;
 
-        void Start()
+        void Awake()
         {
             GetRotationParameters();
             StartCoroutine(Rotation());
@@ -34,7 +38,9 @@ namespace Dices.GamePlay
 
         public IEnumerator Rotation()
         {
-           while (gameObject.transform.position.y > 2)
+            Debug.Log("Start rotate");
+
+            while (gameObject.transform.position.y > 2)
                 {
                 yield return new WaitForSeconds(0);
                 DiceRotationfunc();
@@ -44,7 +50,7 @@ namespace Dices.GamePlay
 
         public IEnumerator SpeedConrol()
         {
-            Debug.Log("Coroutine started for " + gameObject.name);
+//            Debug.Log("Coroutine started for " + gameObject.name);
             while (rb.velocity.y == 0)
             {
                 yield return new WaitForEndOfFrame();
@@ -59,6 +65,18 @@ namespace Dices.GamePlay
             StopCoroutine(speedControl);
         }
 
+        public void OnStopRotationMessage()
+        {
+            if (IsStoded == true)
+            {
+                DestroySelf();
+            }
+
+            else
+            {
+                StopRotation();
+            }
+        }
 
         public void DestroySelf()
         {
@@ -72,14 +90,17 @@ namespace Dices.GamePlay
             transform.rotation = transform.rotation * Q;
         }
 
-        public void StopRotation()
+         void StopRotation()
         {
             IsStoded = true;
-            gameObject.AddComponent<Rigidbody>();
-            gameObject.GetComponent<Rigidbody>().mass = 100;
-            rb = gameObject.GetComponent<Rigidbody>();
-            speedControl = SpeedConrol();
+            rb = gameObject.AddComponent<Rigidbody>();
+            rb.mass = 100;
 
+            if (_scoreManager.SpawnBySwipe == true)
+            {
+                rb.AddForce(transform.forward * 100000);
+            }
+            speedControl = SpeedConrol();
 
             if (IsStopByTimer == true)
             {
@@ -87,6 +108,7 @@ namespace Dices.GamePlay
             }
 
             StartCoroutine(speedControl);
+            Debug.Log("Stope rotate!!!");
         }
         void GetRotationParameters()
         {
@@ -94,6 +116,17 @@ namespace Dices.GamePlay
             B = Random.Range(-1.00f, 1.00f);
             C = Random.Range(-1.00f, 1.00f);
             rotationAxis = new Vector3(A, B, C).normalized;
-        }    
+        }
+
+
+        public class Factory : PlaceholderFactory<Object, DiceRotation>
+        {
+        }
+
+
+        //public class Factory : PlaceholderFactory<string, DiceRotation>
+        //{
+
+        //} // префаб по пути 
     }
 }
