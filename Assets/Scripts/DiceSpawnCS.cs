@@ -15,6 +15,8 @@ namespace Dices.GamePlay
         private SettingsManager _settingsManager;
         [Inject]
         private ScoreManager _scoreManager;
+        [Inject]
+        private DiceRotation.Factory _dice;
 
         [SerializeField]
         private int _dicesNumber;
@@ -77,12 +79,27 @@ namespace Dices.GamePlay
             int i = 0;
             while (i < _dicesNumber)
             {
-                float coordX = (_firstSpawnPoint + i) * _distance * (Mathf.Pow(-1, i + 1));
-                float coordY = 10f;
-                float coordZ = (-(_firstSpawnPoint * (Mathf.Pow(-1, i)) * (_distance / _dicesNumber) * _distance));
+                float coordX, coordY, coordZ;
+
+               // if (_scoreManager.SpawnBySwipe == false)
+                {
+                     coordX = (_firstSpawnPoint + i) * _distance * (Mathf.Pow(-1, i + 1));
+                     coordY = 10f;
+                     coordZ = (-(_firstSpawnPoint * (Mathf.Pow(-1, i)) * (_distance / _dicesNumber) * _distance));
+                }
+                //else
+                //{
+                //    coordX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+                //    coordY = 10f;
+                //    coordZ = Camera.main.ScreenToWorldPoint(Input.mousePosition).z;
+                //}
+
                 Vector3 SpawnPosition = new Vector3(coordZ, coordY, coordX);
                 Quaternion spawnRotation = new Quaternion(Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f));
-                GameObject inst_obj = Instantiate(_dicePref, SpawnPosition, spawnRotation);
+                //GameObject inst_obj = Instantiate(_dicePref, SpawnPosition, spawnRotation);
+                GameObject inst_obj = _dice.Create(_dicePref).gameObject;
+                inst_obj.transform.position = SpawnPosition;
+                inst_obj.transform.rotation = spawnRotation;
                 inst_obj.name += i.ToString();
 
                 if (_stopMode == SettingsManager.StopMode.OnTimer)
@@ -90,8 +107,10 @@ namespace Dices.GamePlay
                     inst_obj.GetComponent<DiceRotation>().IsStopByTimer = true;
                 }
                 inst_obj.transform.parent = gameObject.transform;
+
                 i++;
             }
+
             if (_stopMode == SettingsManager.StopMode.Automatic)
             {
                 GameEventMessage.SendEvent(EventsLibrary.StopRotate);

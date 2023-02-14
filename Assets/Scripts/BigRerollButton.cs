@@ -31,10 +31,12 @@ namespace Dices.UserInterface //Class for short canvas play
         {
             if ((_scoreManager.IsSpawned == true) & (_stopRotateButtonActiveS == true))
             {
+                _scoreManager.SpawnBySwipe = false;
                 StopRotate();
             }
             else
             {
+                _scoreManager.SpawnBySwipe = false;
                 Reroll();
             }
         }

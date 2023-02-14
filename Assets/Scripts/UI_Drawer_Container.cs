@@ -41,6 +41,7 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
 
         private void OnEnable()
         {
+            _scoreManager.SpawnBySwipe = false;
             _scoreDetail.SetActive(_settingsManager.DetailsShow);
             _scoreHistory.SetActive(_settingsManager.IsHistoryShow);
             ShowScoreHistory();
@@ -59,7 +60,6 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
             SetActiveButtons(y);
             GamePlay.DiceSpawnCS.CurrentTimer.Subscribe(
                 _ => ShowCurrentTimer()).AddTo(_disposable);
-
         }
 
         void OnDisable()
@@ -106,6 +106,20 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
             _timerLabel.SetActive(_isOnTimer);
         }
 
+        public void SwipeReroll()
+        {
+            GetSettingsForButton();
+            if ((_scoreManager.IsSpawned == true)&(_stopRotateButtonActive == true))
+            {
+                StopRotate();
+            }
+            else
+            {
+                _scoreManager.SpawnBySwipe = true;
+                Reroll();
+            }
+            SetActiveButtons(_stopRotateButtonActive);
+        }
 
         public void Reroll()
         {
@@ -117,19 +131,22 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
 
             GameEventMessage.SendEvent(EventsLibrary.Spawn);
             _scoreManager.IsSpawned = true;
+            _scoreManager.SpawnBySwipe = false;
             SetActiveButtons(_stopRotateButtonActive);
         }
 
         public void StopRotate()
         {
+            _scoreManager.SpawnBySwipe = false;
             GameEventMessage.SendEvent(EventsLibrary.StopRotate);
             _scoreManager.IsSpawned = false;
             SetActiveButtons(!_stopRotateButtonActive);
+            Debug.Log("Rotate stoped!!!");
         }
 
         void GetSettingsForButton()
         {
-            if ((_settingsManager.CurrentStop == SettingsManager.StopMode.Manual) && (_settingsManager.IsAnimated == true))
+            if ((_settingsManager.CurrentStop == SettingsManager.StopMode.Manual) & (_settingsManager.IsAnimated == true))
             {
                 _stopRotateButtonActive = true;
             }

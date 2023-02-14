@@ -52,7 +52,6 @@ namespace Dices.UserInterface
             if (dicesAmount == falledDicesAmount)
             {
                 NoAnimCubeCount();
-                Debug.Log("Count falled dices");
             }
         }
 

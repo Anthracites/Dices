@@ -51,6 +51,7 @@ namespace Dices.UserInterface // Class for settings canvas
         void Start()
         {
             ApplySavedSettings();
+            _scoreManager.SpawnBySwipe = false;
         }
 
         private void OnEnable()
