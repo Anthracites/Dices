@@ -3,6 +3,9 @@ using System.Collections;
 using Doozy.Engine;
 using Dices.UIConnection;
 using Zenject;
+using UnityEngine.SceneManagement;
+using System;
+using System.Runtime.CompilerServices;
 
 namespace Dices.GamePlay
 {
@@ -10,6 +13,8 @@ namespace Dices.GamePlay
     {
         [Inject]
         ScoreManager _scoreManager;
+        [Inject]
+        SettingsManager _settingsManager;
 
         [SerializeField]
         private float angle = 20; // скорость поворота в градусах
@@ -25,21 +30,49 @@ namespace Dices.GamePlay
         [SerializeField]
         private IEnumerator speedControl;
         private Rigidbody rb;
-        private BoxCollider[] scores;
+        [SerializeField]
+        private GameObject[] scoreCubes;
 
         public bool IsStoded = false;
         public bool IsStopByTimer = false;
+        private bool isRerolled, isAnimated;
 
         void Awake()
         {
-            GetRotationParameters();
-            StartCoroutine(Rotation());
+            isRerolled = false;
+            isAnimated = _settingsManager.IsAnimated;
+            if (isAnimated == true)
+            {
+                GetRotationParameters();
+                StartCoroutine(Rotation());
+            }
+            gameObject.transform.position = new Vector3(1, 1, 1);
+        }
+        private void Start()
+        {
+            if (isAnimated == false)
+            {
+                StartCoroutine(Fall(new WaitForFixedUpdate()));
+            }
+        }
+
+        void ChangeCurrentScore()
+        {
+            GameObject scorePlane = _scoreManager.ScoreCountPlane;
+            foreach(GameObject scoreCube in scoreCubes)
+            {
+                if (scorePlane.GetComponent<Collider>().bounds.Intersects(scoreCube.GetComponent<Collider>().bounds))
+                {
+                    int m = Int32.Parse(scoreCube.name);
+                    _scoreManager.Score -= m;
+                    _scoreManager.ScoreDetales[m - 1]--;
+                }
+            }
+            GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
         }
 
         public IEnumerator Rotation()
         {
-            Debug.Log("Start rotate");
-
             while (gameObject.transform.position.y > 2)
                 {
                 yield return new WaitForSeconds(0);
@@ -47,10 +80,44 @@ namespace Dices.GamePlay
             }
 
         }
+        void OnMouseDown()
+        {
+            foreach (GameObject scoreCube in scoreCubes)
+            {
+                scoreCube.SetActive(true);
+            }
+            ChangeCurrentScore();
+            GameEventMessage.SendEvent(EventsLibrary.RerollOneDice);
+            if (isAnimated == true)
+            {                isRerolled = true;
+                rb = gameObject.GetComponent<Rigidbody>();
+                gameObject.transform.position = new Vector3(transform.position.x, 10, transform.position.z);
+                DiceRotationfunc();
+                float _force = UnityEngine.Random.Range(50000, 100000);
+                rb.AddForce(transform.forward * _force);
+                StopRotation();
+            }
+            else
+            {
+                float[] _angles = { -180, -90, 0f, 90, 180 };
+                int A = UnityEngine.Random.Range(0, _angles.Length - 1);
+                int B = UnityEngine.Random.Range(0, _angles.Length - 1);
+                int C = UnityEngine.Random.Range(0, _angles.Length - 1);
+                Quaternion spawnRotation = Quaternion.Euler(_angles[A], _angles[B], _angles[C]);
+                gameObject.transform.rotation = spawnRotation;
+                StartCoroutine(Fall(new WaitForFixedUpdate()));
+            }
+        }
+
+        public IEnumerator Fall(dynamic a)
+        {
+            yield return a;
+            GameEventMessage.SendEvent(EventsLibrary.CubeFalled);
+            Debug.Log("Falled");
+        }
 
         public IEnumerator SpeedConrol()
         {
-//            Debug.Log("Coroutine started for " + gameObject.name);
             while (rb.velocity.y == 0)
             {
                 yield return new WaitForEndOfFrame();
@@ -69,7 +136,6 @@ namespace Dices.GamePlay
         {
             if (IsStoded == true)
             {
-                DestroySelf();
             }
 
             else
@@ -93,13 +159,19 @@ namespace Dices.GamePlay
          void StopRotation()
         {
             IsStoded = true;
-            rb = gameObject.AddComponent<Rigidbody>();
-            rb.mass = 100;
 
-            if (_scoreManager.SpawnBySwipe == true)
+            if (isRerolled == false)
             {
-                rb.AddForce(transform.forward * 100000);
+                rb = gameObject.AddComponent<Rigidbody>();
+
+                rb.mass = 100;
+
+                if (_scoreManager.SpawnBySwipe == true)
+                {
+                    rb.AddForce(transform.forward * 100000);
+                }
             }
+
             speedControl = SpeedConrol();
 
             if (IsStopByTimer == true)
@@ -108,19 +180,19 @@ namespace Dices.GamePlay
             }
 
             StartCoroutine(speedControl);
-            Debug.Log("Stope rotate!!!");
         }
         void GetRotationParameters()
         {
-            A = Random.Range(-1.00f, 1.00f);
-            B = Random.Range(-1.00f, 1.00f);
-            C = Random.Range(-1.00f, 1.00f);
+            A = UnityEngine.Random.Range(-1.00f, 1.00f);
+            B = UnityEngine.Random.Range(-1.00f, 1.00f);
+            C = UnityEngine.Random.Range(-1.00f, 1.00f);
             rotationAxis = new Vector3(A, B, C).normalized;
         }
 
 
-        public class Factory : PlaceholderFactory<Object, DiceRotation>
+        public class Factory : PlaceholderFactory<UnityEngine.Object, DiceRotation>
         {
+
         }
 
 

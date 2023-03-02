@@ -57,6 +57,7 @@ namespace Dices.UserInterface // Class for settings canvas
         private void OnEnable()
         {
             ChangeCanvasOrientation();
+            _diceAmountSlider.value = _settingsManager.DicesAmount;
         }
 
         void ApplySavedSettings()
@@ -104,17 +105,19 @@ namespace Dices.UserInterface // Class for settings canvas
                 GameEventMessage.SendEvent(EventsLibrary.SoundON);
                 _isVoited = true;
                 AudioMixer.enabled = true;
+                AudioListener.volume = 1;
             }
             else
             {
                 GameEventMessage.SendEvent(EventsLibrary.SoundOff);
                 _isVoited = false;
+                AudioListener.volume = 0;
             }
-            AudioMixer.gameObject.SetActive(_isVoited);
             _soundCyrcle.SetActive(!_isVoited);
             _settingsManager.IsVoited = _isVoited;
             GameEventMessage.SendEvent(EventsLibrary.SettingsChanged);
         }
+
         public void ChangeStopMode()
         {
             switch (_stopModeSelect.value)
@@ -200,12 +203,14 @@ namespace Dices.UserInterface // Class for settings canvas
             _settingsManager.IsHistoryShow = _historyShow.isOn;
             GameEventMessage.SendEvent(EventsLibrary.SettingsChanged);
             GameEventMessage.SendEvent(EventsLibrary.ScoreHistoryWritten);
+            GameEventMessage.SendEvent(EventsLibrary.ClearScore);
             int i = 0;
             foreach (int _scoreHistory in _scoreManager.ScoreHistory)
             {
                 _scoreManager.ScoreHistory[i] = 0;
                 i++;
             }
+            _scoreManager.Score = 0;
         }
 
     void TimePanelShow()

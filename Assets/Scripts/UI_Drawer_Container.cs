@@ -39,6 +39,7 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
         private int _timer;
         private CompositeDisposable _disposable = new CompositeDisposable();
 
+
         private void OnEnable()
         {
             _scoreManager.SpawnBySwipe = false;
@@ -71,6 +72,7 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
         {
             _timeLabel.text = GamePlay.DiceSpawnCS.CurrentTimer.Value.ToString();
         }
+
         public void ShowScoreHistory()
         {
             int i = 0;
@@ -89,6 +91,14 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
                 i++;
             }
         }
+
+        public void AddDiceButtonHendler()
+        {
+            _settingsManager.DicesAmount++;
+            GameEventMessage.SendEvent(EventsLibrary.AddDice);
+            SetActiveButtons(_stopRotateButtonActive);
+        }
+
         void SwichShowTimer()
         {
             bool _isOnTimer;

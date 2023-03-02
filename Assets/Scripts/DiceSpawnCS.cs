@@ -5,6 +5,8 @@ using Dices.UIConnection;
 using Doozy.Engine;
 using Doozy.Engine.Soundy;
 using UniRx;
+using System.Collections.Generic;
+
 
 namespace Dices.GamePlay
 {
@@ -33,9 +35,12 @@ namespace Dices.GamePlay
         public static ReactiveProperty<int> CurrentTimer = new ReactiveProperty<int>();
         [SerializeField]
         private SoundyData _soundData;
+        [SerializeField]
+        private List<GameObject> currentDices = new List<GameObject>();
 
         public void SpawnDice()
         {
+            currentDices.Clear();
             _distance = _dicePref.transform.localScale.x;
             GetSettings();
 
@@ -54,6 +59,7 @@ namespace Dices.GamePlay
             {
                 StartCoroutine(StopByTimer());
             }
+            Time.timeScale = 5;
 
         }
 
@@ -71,6 +77,37 @@ namespace Dices.GamePlay
 
         }
 
+        public void SpawnOneDice()
+        {
+            _dicesNumber = 1;
+
+            if (_isAnimated == true)
+            {
+                AnimSpawnDice();
+            }
+            else
+            {
+                NoAnimSpawnDice();
+                int i = 0;
+                _dicesNumber = _settingsManager.DicesAmount;
+                MadeFirstSpawnPoint();
+                foreach (GameObject _dice in currentDices)
+                {
+                    float coordX, coordY, coordZ;
+                    coordX = (_firstSpawnPoint + i) * _distance * (Mathf.Pow(-1, i + 1));
+                    coordY = 1f;
+                    coordZ = (-(_firstSpawnPoint * (Mathf.Pow(-1, i)) * (_distance / _dicesNumber) * _distance));
+                    Vector3 SpawnPosition = new Vector3(coordZ, coordY, coordX);
+                    _dice.transform.position = SpawnPosition;
+                    i++;
+                }
+            }
+
+            if (_stopMode == SettingsManager.StopMode.OnTimer)
+            {
+                StartCoroutine(StopByTimer());
+            }
+        }
 
         void AnimSpawnDice()
         {
@@ -81,26 +118,26 @@ namespace Dices.GamePlay
             {
                 float coordX, coordY, coordZ;
 
-               // if (_scoreManager.SpawnBySwipe == false)
+                if (_scoreManager.SpawnBySwipe == false)
                 {
                      coordX = (_firstSpawnPoint + i) * _distance * (Mathf.Pow(-1, i + 1));
                      coordY = 10f;
                      coordZ = (-(_firstSpawnPoint * (Mathf.Pow(-1, i)) * (_distance / _dicesNumber) * _distance));
                 }
-                //else
-                //{
-                //    coordX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
-                //    coordY = 10f;
-                //    coordZ = Camera.main.ScreenToWorldPoint(Input.mousePosition).z;
-                //}
+                else
+                {
+                    coordX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+                    coordY = 10f;
+                    coordZ = Camera.main.ScreenToWorldPoint(Input.mousePosition).z;
+                }
 
                 Vector3 SpawnPosition = new Vector3(coordZ, coordY, coordX);
                 Quaternion spawnRotation = new Quaternion(Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f), Random.Range(-1.00f, 1.00f));
-                //GameObject inst_obj = Instantiate(_dicePref, SpawnPosition, spawnRotation);
                 GameObject inst_obj = _dice.Create(_dicePref).gameObject;
                 inst_obj.transform.position = SpawnPosition;
                 inst_obj.transform.rotation = spawnRotation;
                 inst_obj.name += i.ToString();
+                currentDices.Add(inst_obj);
 
                 if (_stopMode == SettingsManager.StopMode.OnTimer)
                 {
@@ -134,17 +171,23 @@ namespace Dices.GamePlay
                 float coordY = 1f;
                 float coordZ = (-(_firstSpawnPoint * (Mathf.Pow(-1, i)) * (_distance / _dicesNumber) * _distance));
                 Vector3 SpawnPosition = new Vector3(coordZ, coordY, coordX);
+
                 float[] _angles = { -180, -90, 0f, 90, 180};
                 int A = Random.Range(0, _angles.Length - 1);
                 int B = Random.Range(0, _angles.Length - 1);
                 int C = Random.Range(0, _angles.Length - 1);
                 Quaternion spawnRotation = Quaternion.Euler(_angles[A], _angles[B], _angles[C]);
-                GameObject inst_obj = Instantiate(_dicePref, SpawnPosition, spawnRotation);
+
+                GameObject inst_obj = _dice.Create(_dicePref).gameObject;
+                inst_obj.transform.rotation = spawnRotation;
+                inst_obj.transform.position = SpawnPosition;
+                currentDices.Add(inst_obj);
                 inst_obj.GetComponent<DiceRotation>().IsStoded = true;
                 inst_obj.transform.parent = gameObject.transform;
                 i++;
             }
         }
+
 
         void MadeFirstSpawnPoint()
 

@@ -7,6 +7,9 @@ namespace Dices
         public static string StopRotate = "StopRotate"; // Вызов остановки вращения кубиков
         public static string ScoreChanged = "ScoreChanged"; // Оповещение об изменении счета
         public static string ScoreHistoryWritten = "ScoreHistoryWritten"; //Оповещени о внесении результата в историю бросков
+        public static string ClearScore = "ClearScore";// ScoreCounter
+        public static string RerollOneDice = "RerollOneDice"; // Переброска одного кубика
+        public static string AddDice = "AddDice";
 
         //Settings
         public static string DisecSpawned = "DisecSpawned"; // Оповещение о том, что кубики заспавнены и находятся на сцене
