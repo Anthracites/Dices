@@ -94,9 +94,12 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
 
         public void AddDiceButtonHendler()
         {
-            _settingsManager.DicesAmount++;
-            GameEventMessage.SendEvent(EventsLibrary.AddDice);
-            SetActiveButtons(_stopRotateButtonActive);
+            if (_settingsManager.DicesAmount < 10)
+            {
+                _settingsManager.DicesAmount++;
+                GameEventMessage.SendEvent(EventsLibrary.AddDice);
+                SetActiveButtons(_stopRotateButtonActive);
+            }
         }
 
         void SwichShowTimer()

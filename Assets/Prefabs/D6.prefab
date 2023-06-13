@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 7492979451613047545}
   - component: {fileID: -4740826440946788565}
   m_Layer: 0
-  m_Name: DiceBlackCube
+  m_Name: D6
   m_TagString: Dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,6 +509,7 @@ MonoBehaviour:
   - {fileID: 938938104735399565}
   - {fileID: 842371408980753491}
   - {fileID: 5967252386350601008}
+  thisCollider: {fileID: -2637842906214864780}
   IsStoded: 0
   IsStopByTimer: 0
 --- !u!65 &-2637842906214864780

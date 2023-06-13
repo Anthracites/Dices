@@ -6,6 +6,7 @@ using Zenject;
 using UnityEngine.SceneManagement;
 using System;
 using System.Runtime.CompilerServices;
+using UnityEngine.EventSystems;
 
 namespace Dices.GamePlay
 {
@@ -32,6 +33,8 @@ namespace Dices.GamePlay
         private Rigidbody rb;
         [SerializeField]
         private GameObject[] scoreCubes;
+        [SerializeField]
+        private Collider thisCollider;
 
         public bool IsStoded = false;
         public bool IsStopByTimer = false;
@@ -80,7 +83,24 @@ namespace Dices.GamePlay
             }
 
         }
-        void OnMouseDown()
+
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.collider == thisCollider)
+                    {
+                        OnTap();
+                    }
+                }
+            }
+        }
+
+        public void OnTap()
         {
             foreach (GameObject scoreCube in scoreCubes)
             {
@@ -89,7 +109,8 @@ namespace Dices.GamePlay
             ChangeCurrentScore();
             GameEventMessage.SendEvent(EventsLibrary.RerollOneDice);
             if (isAnimated == true)
-            {                isRerolled = true;
+            {
+                isRerolled = true;
                 rb = gameObject.GetComponent<Rigidbody>();
                 gameObject.transform.position = new Vector3(transform.position.x, 10, transform.position.z);
                 DiceRotationfunc();
