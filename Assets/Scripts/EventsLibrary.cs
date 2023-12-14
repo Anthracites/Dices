@@ -10,6 +10,8 @@ namespace Dices
         public static string ClearScore = "ClearScore";// ScoreCounter
         public static string RerollOneDice = "RerollOneDice"; // Переброска одного кубика
         public static string AddDice = "AddDice";
+        public static string DetailSelected = "DetailSelected";
+        public static string FixPanelFalled = "FixPanelFalled"; // Исправление падения на ребро
 
         //Settings
         public static string DisecSpawned = "DisecSpawned"; // Оповещение о том, что кубики заспавнены и находятся на сцене

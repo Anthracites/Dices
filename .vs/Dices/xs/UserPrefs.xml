@@ -1,16 +1,15 @@
 ﻿<Properties StartupConfiguration="{428DC80A-E2DF-0D41-732A-D9ACE8DFC9C4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DiceRotation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RescaleBox.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI_Vews/UI_View_Play.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UI_Drawer_Container.cs" />
-      <File FileName="Assets/Scripts/UI_Vews/UI_View_Settings.cs" />
-      <File FileName="Assets/Scripts/DiceRotation.cs" Line="91" Column="59" />
-      <File FileName="Assets/Scripts/UI_Vews/UI_View_Inform.cs" Line="23" Column="45" />
+      <File FileName="Assets/Scripts/RescaleBox.cs" Line="28" Column="42" />
+      <File FileName="Assets/Resources/Editor/InspectorButton.cs" />
+      <File FileName="Assets/Scripts/UI_Vews/UI_View_Play.cs" />
+      <File FileName="Assets/Scripts/SettingsSafeAndUpload.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="50d6b1c4-7bd1-4078-9771-3a06c838fbc4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0acc396e-363d-4f84-a2a5-2c4180254ea0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

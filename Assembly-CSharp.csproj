@@ -72,9 +72,12 @@
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Settings.cs" />
     <Compile Include="Assets/Scripts/EventsLibrary.cs" />
     <Compile Include="Assets/packages/ui-flexbox/UIFlexbox.cs" />
+    <Compile Include="Assets/Scripts/DetailSelect.cs" />
+    <Compile Include="Assets/Scripts/RescaleBox.cs" />
     <Compile Include="Assets/Scripts/DiceSpawnCS.cs" />
     <Compile Include="Assets/Scripts/UI_Drawer_Container.cs" />
     <Compile Include="Assets/Scripts/UnityPurchasing/generated/GooglePlayTangle.cs" />
+    <Compile Include="Assets/Scripts/FixPlane.cs" />
     <Compile Include="Assets/Scripts/ScoreCounter.cs" />
     <Compile Include="Assets/Scripts/PurchaseManager.cs" />
     <Compile Include="Assets/Scripts/UI_Vews/UI_View_Play.cs" />

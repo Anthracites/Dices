@@ -37,7 +37,7 @@ namespace Dices.UIConnection
 
             PlayerPrefs.SetString("CurrentStop", CurrentStop);
             #endregion
-            Debug.Log("Settings uploaded to Windows Registry");
+//            Debug.Log("Settings uploaded to Windows Registry");
         }
 
 
@@ -63,7 +63,7 @@ namespace Dices.UIConnection
 
             ConvertFromDownloadSettings();
             #endregion
-            Debug.Log("Settings downloaded from Windows Registry");
+//            Debug.Log("Settings downloaded from Windows Registry");
         }
 
         void ConvertForSaveSettings()
