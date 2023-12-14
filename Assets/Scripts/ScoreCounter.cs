@@ -27,14 +27,14 @@ namespace Dices.UserInterface
 
         public void CountFalledDices()
         {
-            dicesAmount = _settingsManager.DicesAmount;
+            //dicesAmount = _settingsManager.DicesAmount;
 
-                falledDicesAmount++;
+            //    falledDicesAmount++;
 
-                if (dicesAmount == falledDicesAmount)
-                {
+            //    if (dicesAmount == falledDicesAmount)
+            //    {
                     NoAnimCubeCount();
-                }
+                //}
             Debug.Log("Counted!");
         }
 
@@ -58,8 +58,18 @@ namespace Dices.UserInterface
                     int m = Int32.Parse(CountCube.name);
                     _scoreManager.Score = _score;
                     _scoreManager.ScoreDetales[m - 1]++;
+
+                    if (_scoreManager.SelectedScores[m - 1] == true)
+                    {
+                        GameObject detailMarker = CountCube.transform.parent.GetChild(0).gameObject;
+                        Material[] _materials = new Material[1];
+                        _materials[0] = _scoreManager.DetailMarkerMaterials[m - 1];
+
+                        detailMarker.GetComponent<MeshRenderer>().sharedMaterial = _materials[0];
+                    }
                 }
                 CountCube.SetActive(false);
+
             }
             GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
         }

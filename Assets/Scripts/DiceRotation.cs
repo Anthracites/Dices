@@ -35,6 +35,11 @@ namespace Dices.GamePlay
         private GameObject[] scoreCubes;
         [SerializeField]
         private Collider thisCollider;
+        [SerializeField]
+        private GameObject detailMarker;
+        [SerializeField]
+        private int score;
+        private Material defauiltMaterial;
 
         public bool IsStoded = false;
         public bool IsStopByTimer = false;
@@ -42,6 +47,7 @@ namespace Dices.GamePlay
 
         void Awake()
         {
+            defauiltMaterial = detailMarker.GetComponent<MeshRenderer>().material;
             isRerolled = false;
             isAnimated = _settingsManager.IsAnimated;
             if (isAnimated == true)
@@ -51,12 +57,35 @@ namespace Dices.GamePlay
             }
             gameObject.transform.position = new Vector3(1, 1, 1);
         }
+
         private void Start()
         {
             if (isAnimated == false)
             {
                 StartCoroutine(Fall(new WaitForFixedUpdate()));
             }
+        }
+
+        public void SwichDetailMarker()
+        {
+            GameObject scorePlane = _scoreManager.ScoreCountPlane;
+            foreach (GameObject scoreCube in scoreCubes)
+            {
+                if (scorePlane.GetComponent<Collider>().bounds.Intersects(scoreCube.GetComponent<Collider>().bounds))
+                {
+                    score = Int32.Parse(scoreCube.name);
+                }
+            }
+            if (_scoreManager.SelectedScores[score - 1] == true)
+            {
+                detailMarker.GetComponent<MeshRenderer>().sharedMaterial = _scoreManager.DetailMarkerMaterials[score - 1];
+            }
+            else
+            {
+                detailMarker.GetComponent<MeshRenderer>().sharedMaterial = defauiltMaterial;
+
+            }
+            detailMarker.SetActive(_scoreManager.SelectedScores[score - 1]);
         }
 
         void ChangeCurrentScore()
@@ -66,9 +95,10 @@ namespace Dices.GamePlay
             {
                 if (scorePlane.GetComponent<Collider>().bounds.Intersects(scoreCube.GetComponent<Collider>().bounds))
                 {
-                    int m = Int32.Parse(scoreCube.name);
-                    _scoreManager.Score -= m;
-                    _scoreManager.ScoreDetales[m - 1]--;
+                    score = Int32.Parse(scoreCube.name);
+                    _scoreManager.Score -= score;
+                    _scoreManager.ScoreDetales[score - 1]--;
+
                 }
             }
             GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
@@ -106,10 +136,14 @@ namespace Dices.GamePlay
             {
                 scoreCube.SetActive(true);
             }
+            detailMarker.GetComponent<MeshRenderer>().sharedMaterial = defauiltMaterial;
             ChangeCurrentScore();
             GameEventMessage.SendEvent(EventsLibrary.RerollOneDice);
             if (isAnimated == true)
             {
+                speedControl = SpeedConrol();
+                GameEventMessage.SendEvent(EventsLibrary.RerollOneDice);
+                Time.timeScale = 5;
                 isRerolled = true;
                 rb = gameObject.GetComponent<Rigidbody>();
                 gameObject.transform.position = new Vector3(transform.position.x, 10, transform.position.z);
@@ -117,6 +151,7 @@ namespace Dices.GamePlay
                 float _force = UnityEngine.Random.Range(50000, 100000);
                 rb.AddForce(transform.forward * _force);
                 StopRotation();
+                StartCoroutine(speedControl);
             }
             else
             {
@@ -127,14 +162,16 @@ namespace Dices.GamePlay
                 Quaternion spawnRotation = Quaternion.Euler(_angles[A], _angles[B], _angles[C]);
                 gameObject.transform.rotation = spawnRotation;
                 StartCoroutine(Fall(new WaitForFixedUpdate()));
+
             }
         }
 
         public IEnumerator Fall(dynamic a)
         {
             yield return a;
-            GameEventMessage.SendEvent(EventsLibrary.CubeFalled);
-            Debug.Log("Falled");
+
+            GameEventMessage.SendEvent(EventsLibrary.FixPanelFalled);
+            SwichDetailMarker();
         }
 
         public IEnumerator SpeedConrol()
@@ -184,13 +221,14 @@ namespace Dices.GamePlay
             if (isRerolled == false)
             {
                 rb = gameObject.AddComponent<Rigidbody>();
-
                 rb.mass = 100;
+                rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+                rb.ResetCenterOfMass();
 
-                if (_scoreManager.SpawnBySwipe == true)
-                {
-                    rb.AddForce(transform.forward * 100000);
-                }
+                //if (_scoreManager.SpawnBySwipe == true)
+                //{
+                //    rb.AddForce(transform.forward * 100000);
+                //}
             }
 
             speedControl = SpeedConrol();

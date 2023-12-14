@@ -96,6 +96,7 @@ namespace Dices.UserInterface // Class for conteiner on full play canvas
         {
             if (_settingsManager.DicesAmount < 10)
             {
+                Time.timeScale = 5;
                 _settingsManager.DicesAmount++;
                 GameEventMessage.SendEvent(EventsLibrary.AddDice);
                 SetActiveButtons(_stopRotateButtonActive);
