@@ -170,6 +170,7 @@ namespace Dices.Donation
 
         public void StartShow()
     {
+            Time.timeScale = 1;
             int _sum = _donationManager.DonationAmount;
             SoundyManager.Play(_soundData);
             _showDonationCamera.SetActive(true);
