@@ -169,7 +169,7 @@ namespace Dices.GamePlay
         public IEnumerator Fall(dynamic a)
         {
             yield return a;
-
+            SnapToNearestFace();
             GameEventMessage.SendEvent(EventsLibrary.FixPanelFalled);
             SwichDetailMarker();
         }
@@ -248,16 +248,40 @@ namespace Dices.GamePlay
             rotationAxis = new Vector3(A, B, C).normalized;
         }
 
+        private void SnapToNearestFace()
+{
+    Quaternion current = transform.rotation;
+    float minAngle = float.MaxValue;
+    Quaternion bestRotation = current;
+
+    // Возможные ориентации куба (6 граней)
+    Quaternion[] orientations = {
+        Quaternion.LookRotation(Vector3.forward, Vector3.up),
+        Quaternion.LookRotation(Vector3.back, Vector3.up),
+        Quaternion.LookRotation(Vector3.left, Vector3.up),
+        Quaternion.LookRotation(Vector3.right, Vector3.up),
+        Quaternion.LookRotation(Vector3.up, Vector3.back),
+        Quaternion.LookRotation(Vector3.down, Vector3.forward)
+    };
+
+    foreach (var q in orientations)
+    {
+        float angle = Quaternion.Angle(current, q);
+        if (angle < minAngle)
+        {
+            minAngle = angle;
+            bestRotation = q;
+        }
+    }
+
+    transform.rotation = bestRotation;
+}
+
+
 
         public class Factory : PlaceholderFactory<UnityEngine.Object, DiceRotation>
         {
 
         }
-
-
-        //public class Factory : PlaceholderFactory<string, DiceRotation>
-        //{
-
-        //} // префаб по пути 
     }
 }

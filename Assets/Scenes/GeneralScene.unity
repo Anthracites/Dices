@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43535808, g: 0.48263907, b: 0.5636153, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366828, g: 0.48427755, b: 0.56452703, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -23557,14 +23557,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.77479345, y: -0, z: -0, w: 0.6322144}
+  m_LocalRotation: {x: 0.702457, y: -0, z: -0, w: 0.7117262}
   m_LocalPosition: {x: 0, y: 2.9579196, z: 0.41526255}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 89.249, y: 0, z: 0}
 --- !u!1 &710601877
 GameObject:
   m_ObjectHideFlags: 0
@@ -64101,7 +64101,7 @@ GameObject:
   - component: {fileID: 2065243501}
   - component: {fileID: 2065243500}
   m_Layer: 0
-  m_Name: Terrxain
+  m_Name: Terrain
   m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
