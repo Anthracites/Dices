@@ -47,17 +47,16 @@ namespace Dices.UserInterface
                     _productID = "0";
                     break;
                 case 5:
-                    _productID = "10";
+                    _productID = "1";
                     break;
                 case 10:
-                    _productID = "20";
+                    _productID = "2";
                     break;
                 default:
-                    _productID = "20";
+                    _productID = "2";
                     break;
             }
 
-            _submitButton.productId = _productID;
         }
     }
 }

@@ -33,8 +33,8 @@ namespace Dices.UserInterface
 
             //    if (dicesAmount == falledDicesAmount)
             //    {
-                    NoAnimCubeCount();
-                //}
+            NoAnimCubeCount();
+            //}
             Debug.Log("Counted!");
         }
 
@@ -46,7 +46,7 @@ namespace Dices.UserInterface
         void NoAnimCubeCount()
         {
 
-                _score = _scoreManager.Score;
+            _score = _scoreManager.Score;
 
 
             _countCubes = GameObject.FindGameObjectsWithTag("ScoreCube");
@@ -77,19 +77,19 @@ namespace Dices.UserInterface
 
         public void ScoreCleaner()
         {
-                falledDicesAmount = 0;
-                _score = 0;
-                _scoreManager.Score = 0;
-                int i = 0;
-                foreach (int scoreDetail in _scoreManager.ScoreDetales)
-                {
-                    _scoreManager.ScoreDetales[i] = 0;
-                    i++;
-                }
+            falledDicesAmount = 0;
+            _score = 0;
+            _scoreManager.Score = 0;
+            int i = 0;
+            foreach (int scoreDetail in _scoreManager.ScoreDetales)
+            {
+                _scoreManager.ScoreDetales[i] = 0;
+                i++;
+            }
 
-                GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
-                dicesAmount = _settingsManager.DicesAmount;
-//            Debug.Log("Cleaned!!!");
+            GameEventMessage.SendEvent(EventsLibrary.ScoreChanged);
+            dicesAmount = _settingsManager.DicesAmount;
+            //            Debug.Log("Cleaned!!!");
         }
 
         public void WriteHistory()

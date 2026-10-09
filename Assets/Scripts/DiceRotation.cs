@@ -18,17 +18,6 @@ namespace Dices.GamePlay
         SettingsManager _settingsManager;
 
         [SerializeField]
-        private float angle = 20; // скорость поворота в градусах
-        [SerializeField]
-        private float angle1; // скорость поворота в кватернионах
-        [SerializeField]
-        private Vector3 rotationAxis; // ось вращения
-
-        [SerializeField]
-        private float A, B, C;
-        [SerializeField]
-        private Quaternion Q;
-        [SerializeField]
         private IEnumerator speedControl;
         private Rigidbody rb;
         [SerializeField]
@@ -52,7 +41,6 @@ namespace Dices.GamePlay
             isAnimated = _settingsManager.IsAnimated;
             if (isAnimated == true)
             {
-                GetRotationParameters();
                 StartCoroutine(Rotation());
             }
             gameObject.transform.position = new Vector3(1, 1, 1);
@@ -91,7 +79,7 @@ namespace Dices.GamePlay
         void ChangeCurrentScore()
         {
             GameObject scorePlane = _scoreManager.ScoreCountPlane;
-            foreach(GameObject scoreCube in scoreCubes)
+            foreach (GameObject scoreCube in scoreCubes)
             {
                 if (scorePlane.GetComponent<Collider>().bounds.Intersects(scoreCube.GetComponent<Collider>().bounds))
                 {
@@ -107,7 +95,7 @@ namespace Dices.GamePlay
         public IEnumerator Rotation()
         {
             while (gameObject.transform.position.y > 2)
-                {
+            {
                 yield return new WaitForSeconds(0);
                 DiceRotationfunc();
             }
@@ -169,25 +157,71 @@ namespace Dices.GamePlay
         public IEnumerator Fall(dynamic a)
         {
             yield return a;
-            SnapToNearestFace();
+            rb.AddForce(Vector3.down * 0.05f, ForceMode.Impulse);
             GameEventMessage.SendEvent(EventsLibrary.FixPanelFalled);
             SwichDetailMarker();
         }
 
         public IEnumerator SpeedConrol()
         {
-            while (rb.velocity.y == 0)
+            while (rb.linearVelocity.y == 0)
             {
                 yield return new WaitForEndOfFrame();
             }
 
-            while (rb.velocity.y != 0)
+            while (rb.linearVelocity.y != 0)
             {
                 yield return new WaitForEndOfFrame();
+            }
+
+            // Кость перестала падать по вертикали, но могла остановиться на ребре или углу.
+            // Проверяем это ОДИН раз и, если нужно, мгновенно доворачиваем до ближайшей
+            // грани — без физических толчков и без ожидания, пока физика "сама
+            // успокоится". Это важно: CubeFalled ниже — это сигнал, от которого зависит
+            // общий подсчёт очков (ScoreCounter ждёt его от КАЖДОЙ кости, строго). Любая
+            // корутина здесь, которая теоретически может не завершиться (например, если
+            // rb.velocity никогда не уйдёт точно в ноль), означает, что подсчёт очков
+            // зависнет целиком — поэтому тут сознательно нет циклов ожидания.
+            if (GetBestFaceAlignment() < faceAlignmentThreshold)
+            {
+                SnapToNearestFace();
+                // Поворот подменили мгновенно — гасим остаточную скорость/вращение,
+                // чтобы кость не продолжила с того места, где её "прервали", и не
+                // съехала с подмененной грани на следующем физическом шаге.
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
             }
 
             GameEventMessage.SendEvent(EventsLibrary.CubeFalled);
             StopCoroutine(speedControl);
+        }
+
+        // --- Защита от приземления на ребро/угол ---
+
+        [SerializeField]
+        [Tooltip("Насколько точно нормаль грани должна совпадать с мировым 'вверх' (1 = идеально), чтобы считать, что кость легла на грань.")]
+        private float faceAlignmentThreshold = 0.97f;
+
+        private static readonly Vector3[] LocalFaceNormals =
+        {
+            Vector3.up, Vector3.down, Vector3.forward, Vector3.back, Vector3.left, Vector3.right
+        };
+
+        // Возвращает, насколько хорошо текущая ориентация кости совпадает с "лежит на грани"
+        // (1 — идеально лежит на грани, меньше — балансирует на ребре/углу)
+        private float GetBestFaceAlignment()
+        {
+            float best = -1f;
+            foreach (Vector3 localNormal in LocalFaceNormals)
+            {
+                Vector3 worldNormal = transform.TransformDirection(localNormal);
+                float dot = Vector3.Dot(worldNormal, Vector3.up);
+                if (dot > best)
+                {
+                    best = dot;
+                }
+            }
+            return best;
         }
 
         public void OnStopRotationMessage()
@@ -209,12 +243,15 @@ namespace Dices.GamePlay
 
         void DiceRotationfunc()
         {
-            angle1 = angle * (Mathf.PI / 180);
+            float angle1;
+            Quaternion Q;
+            Vector3 rotationAxis = RotationAxis();
+            angle1 = 20 * (Mathf.PI / 180);
             Q = new Quaternion(Mathf.Sin(angle1 / 2) * rotationAxis.x, Mathf.Sin(angle1 / 2) * rotationAxis.y, Mathf.Sin(angle1 / 2) * rotationAxis.z, Mathf.Cos(angle1 / 2));
             transform.rotation = transform.rotation * Q;
         }
 
-         void StopRotation()
+        void StopRotation()
         {
             IsStoded = true;
 
@@ -224,11 +261,7 @@ namespace Dices.GamePlay
                 rb.mass = 100;
                 rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
                 rb.ResetCenterOfMass();
-
-                //if (_scoreManager.SpawnBySwipe == true)
-                //{
-                //    rb.AddForce(transform.forward * 100000);
-                //}
+                rb.angularDamping = 0.5f;
             }
 
             speedControl = SpeedConrol();
@@ -240,22 +273,25 @@ namespace Dices.GamePlay
 
             StartCoroutine(speedControl);
         }
-        void GetRotationParameters()
+
+        private Vector3 RotationAxis()
         {
+            float A, B, C;
             A = UnityEngine.Random.Range(-1.00f, 1.00f);
             B = UnityEngine.Random.Range(-1.00f, 1.00f);
             C = UnityEngine.Random.Range(-1.00f, 1.00f);
-            rotationAxis = new Vector3(A, B, C).normalized;
+            Vector3 rotationAxis = new Vector3(A, B, C).normalized;
+            return rotationAxis;
         }
 
         private void SnapToNearestFace()
-{
-    Quaternion current = transform.rotation;
-    float minAngle = float.MaxValue;
-    Quaternion bestRotation = current;
+        {
+            Quaternion current = transform.rotation;
+            float minAngle = float.MaxValue;
+            Quaternion bestRotation = current;
 
-    // Возможные ориентации куба (6 граней)
-    Quaternion[] orientations = {
+            // Возможные ориентации куба (6 граней)
+            Quaternion[] orientations = {
         Quaternion.LookRotation(Vector3.forward, Vector3.up),
         Quaternion.LookRotation(Vector3.back, Vector3.up),
         Quaternion.LookRotation(Vector3.left, Vector3.up),
@@ -264,18 +300,18 @@ namespace Dices.GamePlay
         Quaternion.LookRotation(Vector3.down, Vector3.forward)
     };
 
-    foreach (var q in orientations)
-    {
-        float angle = Quaternion.Angle(current, q);
-        if (angle < minAngle)
-        {
-            minAngle = angle;
-            bestRotation = q;
-        }
-    }
+            foreach (var q in orientations)
+            {
+                float angle = Quaternion.Angle(current, q);
+                if (angle < minAngle)
+                {
+                    minAngle = angle;
+                    bestRotation = q;
+                }
+            }
 
-    transform.rotation = bestRotation;
-}
+            transform.rotation = bestRotation;
+        }
 
 
 
