@@ -1,1 +1,66 @@
-Library
+# Положи этот файл в корень проекта (рядом с папками Assets, Packages, ProjectSettings)
+
+# ---------- Unity: генерируемые папки ----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+ExportedObj/
+
+# ---------- IDE ----------
+.vs/
+.idea/
+.vscode/
+.consulo/
+.gradle/
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------- Генерируемые файлы проекта ----------
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---------- Сборки и отладка ----------
+*.apk
+*.aab
+*.app
+*.unitypackage
+sysinfo.txt
+crashlytics-build.properties
+
+# ---------- Asset Store ----------
+/[Aa]ssets/AssetStoreTools*
+
+# ---------- Системные файлы ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Секреты: никогда не коммитить ----------
+# SSH-ключи
+Antracites_git
+Antracites_git.pub
+id_rsa*
+id_ed25519*
+*.pem
+# Ключи подписи Android
+*.keystore
+*.jks

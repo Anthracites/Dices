@@ -161,6 +161,7 @@ namespace Dices.Donation
 
         public void TenDollarShow()
         {
+            Time.timeScale = 1;
             CreateRandomFlower();
             _trail_L.SetActive(true);
             _trail_R.SetActive(true);

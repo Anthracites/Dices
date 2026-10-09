@@ -64,15 +64,15 @@ namespace Dices
 
         public IEnumerator SpeedConrol()
         {
-            while (rigidbody.velocity.y == 0)
+            while (rigidbody.linearVelocity.y == 0)
             {
                 yield return new WaitForEndOfFrame();
             }
 
-            while (rigidbody.velocity.y != 0)
+            while (rigidbody.linearVelocity.y != 0)
             {
                 yield return new WaitForEndOfFrame();
-                verticalSpeed = rigidbody.velocity.y;
+                verticalSpeed = rigidbody.linearVelocity.y;
             }
             StopCoroutine(speedControl);
             GameEventMessage.SendEvent(EventsLibrary.FixPanelFalled);
