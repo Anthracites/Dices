@@ -1,0 +1,63 @@
+# .gitignore для Dices (Unity)
+# Папки с .meta-файлами в Assets/ и Packages/ коммитить НУЖНО.
+
+# ===== Unity: сгенерированные папки =====
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+ExportedObj/
+.consulo/
+
+# ===== IDE =====
+.vs/
+.vscode/
+.idea/
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ===== Генерируемые Unity файлы проектов (не .meta!) =====
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.tmp
+sysinfo.txt
+crashlytics-build.properties
+
+# ===== Билды и пакеты =====
+*.apk
+*.aab
+*.app
+*.unitypackage
+
+# ===== Секреты и ключи =====
+*.keystore
+*.jks
+*.p12
+*.pem
+*.mobileprovision
+.env
+
+# ===== ОС =====
+.DS_Store
+Thumbs.db
+
+
+# ===== Специфично для Dices =====
+# SSH-ключи, которые попали в репозиторий
+Antracites_git
+Antracites_git.pub
