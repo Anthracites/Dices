@@ -66,6 +66,7 @@ namespace Dices.UserInterface // Class for settings canvas
             _diceAmountField.text = _settingsManager.DicesAmount.ToString();
             SwichMode();
             _useAnimation.isOn = _settingsManager.IsAnimated;
+            _stopModePanel.gameObject.SetActive(_settingsManager.IsAnimated);
             _historyShow.isOn = _settingsManager.IsHistoryShow;
             _scoreDetails.isOn = _settingsManager.DetailsShow;
             _timerSlider.value = _settingsManager.StopTimer;
