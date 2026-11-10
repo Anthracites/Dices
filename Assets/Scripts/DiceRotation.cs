@@ -157,7 +157,10 @@ namespace Dices.GamePlay
         public IEnumerator Fall(dynamic a)
         {
             yield return a;
+             if (isAnimated != false)
+             {
             rb.AddForce(Vector3.down * 0.05f, ForceMode.Impulse);
+            }
             GameEventMessage.SendEvent(EventsLibrary.FixPanelFalled);
             SwichDetailMarker();
         }
